@@ -5,15 +5,15 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(0.95 0.0111 89.72);
+  --foreground: oklch(0.73 0.1228 43.15);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(0.44 0.08576 227.2852);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
+  --secondary: oklch(0.49 0.094565 227.7411);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -117,4 +117,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.main-container {
+  @apply mx-4 lg:mx-auto lg:h-full lg:w-11/12 lg:pb-0 xl:w-5/6 xl:px-2;
 }
