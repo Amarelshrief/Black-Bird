@@ -1,14 +1,17 @@
 import { Bird, ShoppingCart, User } from "lucide-react";
 import { Input } from "../ui/input";
+import { Link } from "react-router-dom";
 
 function SecondHeader() {
   return (
     <header>
       <div className="main-container flex items-center justify-between p-2">
-        <div className="flex items-center justify-between gap-1 cursor-pointer text-[var(--primary)]">
-          <Bird />
-          <h1 className="text-2xl font-bold">BlackBird</h1>
-        </div>
+        <Link to={"/"}>
+          <div className="flex items-center justify-between gap-1 cursor-pointer text-[var(--primary)]">
+            <Bird />
+            <h1 className="text-2xl font-bold">BlackBird</h1>
+          </div>
+        </Link>
         <div className="w-2/3">
           <Input
             type="search"
