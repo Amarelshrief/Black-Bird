@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Bird, Facebook, Instagram, Sun, Moon, X } from "lucide-react";
+import { Facebook, Instagram, Sun, Moon, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
   DropdownMenu,
@@ -17,17 +17,14 @@ function MainHeader() {
     setDark(!dark);
   }
   return (
-    <header className="bg-[var(--primary)] pb-2">
+    <header className="bg-[var(--foreground)] pb-2">
       <div className="main-container flex items-center justify-between p-2">
-        <Link to={"/"}>
-          <div className="flex items-center justify-between gap-1 cursor-pointer">
-            <Bird />
-            <h1 className="text-2xl font-bold">BlackBird</h1>
-          </div>
-        </Link>
+        <h2 className="text-xl text-[var(--primary)] font-bold">
+          Free Express Shipping
+        </h2>
         <div>
-          <ul className="flex items-center gap-6">
-            <li className="text-2xl cursor-pointer hover:text-[#bb6b59] flex items-center justify-center duration-150">
+          <ul className="flex items-center gap-6 text-[var(--primary)]">
+            <li className="text-2xl cursor-pointer hover:text-[var(--secondary)] flex items-center justify-center duration-150">
               <DropdownMenu>
                 <DropdownMenuTrigger
                   className="cursor-pointer"
@@ -40,17 +37,17 @@ function MainHeader() {
             </li>
             {/* <li>EN</li> */}
             <Link to={"/"}>
-              <li className="text-2xl cursor-pointer hover:text-[#bb6b59] flex items-center justify-center duration-150">
+              <li className="text-2xl cursor-pointer hover:text-[var(--secondary)] flex items-center justify-center duration-150">
                 <X />
               </li>
             </Link>
             <Link to={"/"}>
-              <li className="text-2xl cursor-pointer hover:text-[#bb6b59] flex items-center justify-center duration-150">
+              <li className="text-2xl cursor-pointer hover:text-[var(--secondary)] flex items-center justify-center duration-150">
                 <Facebook />
               </li>
             </Link>
             <Link to={"/"}>
-              <li className="text-2xl cursor-pointer hover:text-[#bb6b59] flex items-center justify-center duration-150">
+              <li className="text-2xl cursor-pointer hover:text-[var(--secondary)] flex items-center justify-center duration-150">
                 <Instagram />
               </li>
             </Link>
