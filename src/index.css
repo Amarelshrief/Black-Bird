@@ -6,18 +6,18 @@
 :root {
   --radius: 0.625rem;
   --background: oklch(0.95 0.0111 89.72);
-  --foreground: oklch(0.73 0.1228 43.15);
+  --foreground: oklch(0 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.44 0.08576 227.2852);
+  --primary: oklch(0.63 0.2577 29.23);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.49 0.094565 227.7411);
+  --secondary: oklch(0.42 0.1722 29.15);
   --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
+  --muted: oklch(0.23 0.0928 29.23);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
+  --accent: oklch(0.64 0.2248 20.25);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
@@ -120,5 +120,5 @@
 }
 
 .main-container {
-  @apply mx-4 lg:mx-auto lg:h-full lg:w-11/12 lg:pb-0 xl:w-5/6 xl:px-2;
+  @apply mx-4 lg:mx-auto lg:h-full lg:w-11/12 lg:pb-0 xl:w-7/8 xl:px-2;
 }
