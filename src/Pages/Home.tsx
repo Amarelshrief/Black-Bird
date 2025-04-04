@@ -1,11 +1,5 @@
-import SecondHeader from "@/components/Header/SecondHeader";
-
 function Home() {
-  return (
-    <div className="mb-4">
-      <SecondHeader />
-    </div>
-  );
+  return <div className="mb-4"></div>;
 }
 
 export default Home;
