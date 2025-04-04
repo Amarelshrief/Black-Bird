@@ -1,13 +1,13 @@
 import Footer from "@/components/Footer/Footer";
-import MainHeader from "@/components/Header/MainHeader";
 import { Outlet } from "react-router-dom";
 import { ThemeProvider } from "@/components/Theme/Theme";
+import Headers from "@/components/Header/Headers";
 
 function RootLayout() {
   return (
     <>
       <ThemeProvider defaultTheme="dark" storageKey="black-bird-theme">
-        <MainHeader />
+        <Headers />
         <main>
           <Outlet />
         </main>
