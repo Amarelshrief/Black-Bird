@@ -16,7 +16,7 @@ function Hero() {
   }, [reset]);
   return (
     <section>
-      <div className="flex items-center justify-between mb-4 bg-[var(--card)] p-4">
+      <div className="flex items-center justify-between bg-[var(--card)] p-4">
         <div className="main-container flex items-center justify-between gap-4">
           <div className="w-full h-full overflow-x-hidden">
             <div className="">
@@ -44,7 +44,7 @@ function Hero() {
                       <span className="text-[var(--primary)]">$99.00</span>
                     </p>
                     <div>
-                      <Button className="h-12 w-[9rem] text-lg bg-[var(--primary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer">
+                      <Button className="h-12 w-[9rem] text-lg text-[var(--input)] bg-[var(--primary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer">
                         Shop Now
                       </Button>
                     </div>
