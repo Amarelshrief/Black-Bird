@@ -57,7 +57,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
@@ -85,7 +85,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
@@ -113,7 +113,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
@@ -141,7 +141,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
@@ -169,7 +169,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
@@ -197,7 +197,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
@@ -225,7 +225,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
@@ -253,7 +253,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
@@ -281,7 +281,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
@@ -309,7 +309,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
@@ -337,7 +337,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
@@ -365,7 +365,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
@@ -393,7 +393,7 @@ function ProductsList() {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full text-[] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                    className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
                   >
                     Add to Cart
                   </Button>
