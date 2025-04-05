@@ -35,14 +35,14 @@ function ProductsList() {
       </div>
       <div className="m-4">
         <Carousel className="flex">
-          <CarouselContent className="ml-4 flex gap-2">
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+          <CarouselContent className="ml-0 flex gap-2">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -64,13 +64,13 @@ function ProductsList() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -92,13 +92,13 @@ function ProductsList() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -120,13 +120,13 @@ function ProductsList() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -148,13 +148,13 @@ function ProductsList() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -176,13 +176,13 @@ function ProductsList() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -204,13 +204,13 @@ function ProductsList() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -232,13 +232,13 @@ function ProductsList() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -260,13 +260,13 @@ function ProductsList() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -288,13 +288,13 @@ function ProductsList() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -316,13 +316,13 @@ function ProductsList() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -344,13 +344,13 @@ function ProductsList() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -372,13 +372,13 @@ function ProductsList() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="flex items-center border rounded-2xl basis-full basis-1/4.5 duration-300">
+            <CarouselItem className="flex items-center border p-4 rounded-2xl basis-1/5 duration-300">
               <div className="flex flex-col gap-2 p-4 rounded-xl hover:border-[var(--primary)] duration-300 h-full">
                 <div className="pb-4 flex gap-2 items-center">
                   <img
                     src={shirt}
                     alt="shirt"
-                    className="hover:scale-110 duration-300 cursor-pointer"
+                    className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col items-center gap-2">
@@ -401,8 +401,8 @@ function ProductsList() {
               </div>
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="cursor-pointer" />
+          <CarouselNext className="cursor-pointer" />
         </Carousel>
       </div>
     </section>
