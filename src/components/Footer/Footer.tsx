@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer>
-      <div className="bg-[var(--foreground)] pb-8">
+      <div className="bg-[var(--foreground)] pb-8 pt-4">
         <div className="main-container grid grid-cols-4 gap-18 p-2">
           <div>
             <div className="flex items-center gap-1 pb-2 text-[var(--primary)]">
