@@ -5,9 +5,9 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.95 0.0111 89.72);
+  --background: oklch(1 0 0);
   --foreground: oklch(0 0 0);
-  --card: oklch(1 0 0);
+  --card: oklch(0.98 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
@@ -120,5 +120,5 @@
 }
 
 .main-container {
-  @apply mx-4 lg:mx-auto lg:h-full lg:w-11/12 lg:pb-0 xl:w-7/8 xl:px-2;
+  @apply mx-4 lg:mx-auto lg:h-full lg:w-11/12 lg:pb-0 xl:w-11/12;
 }
