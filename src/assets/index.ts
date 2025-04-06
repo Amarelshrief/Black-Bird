@@ -8,6 +8,9 @@ import furniture from "./furniture.png";
 import shirt from "./shirt.png";
 import sports from "./sports.png";
 import toys from "./toys.png";
+import announce1 from "./annouce1.webp";
+import announce2 from "./annouce2.webp";
+import announce3 from "./annouce3.webp";
 
 export {
   bannerImg1,
@@ -20,4 +23,7 @@ export {
   shirt,
   sports,
   toys,
+  announce1,
+  announce2,
+  announce3,
 };
