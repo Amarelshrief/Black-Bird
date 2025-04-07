@@ -14,7 +14,7 @@ function Announce() {
               className="w-full object-cover rounded-xl"
             />
           </div>
-          <div className="absolute top-0 left-0 w-full flex flex-col items-start justify-center gap-2 p-12">
+          <div className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center gap-2 p-12">
             <p className="text-sm tracking-widest">NEW ARRIVALS</p>
             <p className="text-xl font-bold">SKI CLOTHES SALE</p>
             <p className="text-md tracking-wider text-[var(--secondary)]">
@@ -39,7 +39,7 @@ function Announce() {
               className="w-full object-cover rounded-xl"
             />
           </div>
-          <div className="absolute top-0 left-0 w-full flex flex-col items-start justify-center gap-2 p-12">
+          <div className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center gap-2 p-12">
             <p className="text-sm tracking-widest">BEST SELLER</p>
             <p className="text-xl font-bold">TRENDING WOMEN</p>
             <p className="text-md tracking-wider">SUNGLASSES</p>
@@ -62,7 +62,7 @@ function Announce() {
               className="w-full object-cover rounded-xl"
             />
           </div>
-          <div className="absolute top-0 left-0 w-full flex flex-col items-start justify-center gap-2 p-12">
+          <div className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center gap-2 p-12">
             <p className="text-sm tracking-widest">NEW ARRIVALS</p>
             <p className="text-xl font-bold">NEW LATEST BAG</p>
             <p className="text-md tracking-wider text-[var(--secondary)]">
