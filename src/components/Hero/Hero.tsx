@@ -6,14 +6,13 @@ import { useEffect, useState } from "react";
 function Hero() {
   const [banner, setBanner] = useState(0);
   const banners = [bannerImg1, bannerImg4];
-  const reset = banner + 1;
   function nextImg() {
     setBanner(banner === 1 ? 0 : (prev) => prev + 1);
   }
   useEffect(() => {
     const nextImgInterval = setInterval(nextImg, 5000);
     return () => clearInterval(nextImgInterval);
-  }, [reset]);
+  }, [banners]);
   return (
     <section>
       <div className="flex items-center justify-between bg-[var(--card)] p-4">
