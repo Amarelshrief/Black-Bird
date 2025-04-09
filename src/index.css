@@ -142,3 +142,7 @@
 .main-container {
   @apply mx-4 lg:mx-auto lg:h-full lg:w-11/12 lg:pb-0 xl:w-11/12;
 }
+
+.bg {
+  background-image: url(/src/assets/long-banner.jpg);
+}
