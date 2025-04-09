@@ -11,7 +11,7 @@ import { Cable, Music, Shirt, Watch } from "lucide-react";
 function NavigationHeader() {
   return (
     <header>
-      <div className="main-container flex items-center justify-between m-8">
+      <div className="hidden main-container flex items-center justify-between m-8">
         <div>
           <NavigationMenu>
             <NavigationMenuList>
