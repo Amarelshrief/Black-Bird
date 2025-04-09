@@ -12,13 +12,13 @@ import { furniture, gaming, shirt, sports } from "@/assets";
 function ElecProducts() {
   return (
     <section className="main-container m-8">
-      <div className="flex items-center justify-between">
-        <div className="flex flex-col">
+      <div className="flex flex-col xl:flex-row items-center justify-between">
+        <div className="flex flex-col w-full">
           <h2 className="mb-4 text-2xl font-bold">Electronic Products</h2>
           <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
             <Button
               variant="ghost"
-              className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+              className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
             >
               Wireless Speaker
             </Button>
@@ -26,7 +26,7 @@ function ElecProducts() {
           <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
             <Button
               variant="ghost"
-              className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+              className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
             >
               Tablet
             </Button>
@@ -34,7 +34,7 @@ function ElecProducts() {
           <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
             <Button
               variant="ghost"
-              className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+              className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
             >
               Smartphone
             </Button>
@@ -42,7 +42,7 @@ function ElecProducts() {
           <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
             <Button
               variant="ghost"
-              className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+              className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
             >
               Laptop
             </Button>
@@ -50,7 +50,7 @@ function ElecProducts() {
           <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
             <Button
               variant="ghost"
-              className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+              className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
             >
               iMac
             </Button>
@@ -58,7 +58,7 @@ function ElecProducts() {
           <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
             <Button
               variant="ghost"
-              className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+              className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
             >
               Game Controller
             </Button>
@@ -66,7 +66,7 @@ function ElecProducts() {
           <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
             <Button
               variant="ghost"
-              className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+              className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
             >
               Drone
             </Button>
@@ -74,7 +74,7 @@ function ElecProducts() {
           <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
             <Button
               variant="ghost"
-              className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+              className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
             >
               Apple
             </Button>
@@ -82,17 +82,17 @@ function ElecProducts() {
           <div className="-ml-3 flex items-center gap-2 hover:underline hover:translate-x-2 hover:text-[var(--muted)] duration-300 mt-4">
             <Button
               variant="ghost"
-              className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+              className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
             >
               Browse All
               <ChevronRight className="cursor-pointer" size={18} />
             </Button>
           </div>
         </div>
-        <div className="max-w-[65rem]">
+        <div className="max-w-full xl:max-w-[65rem] p-16">
           <Carousel className="flex">
             <CarouselContent className="ml-0 flex">
-              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl basis-full lg:basis-1/3">
+              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl sm:basis-1/3">
                 <div className="flex flex-col gap-2 p-4 rounded-xl h-full">
                   <div className="flex items-center">
                     <img
@@ -120,7 +120,7 @@ function ElecProducts() {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl basis-full lg:basis-1/3">
+              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl sm:basis-1/3">
                 <div className="flex flex-col gap-2 p-4 rounded-xl h-full">
                   <div className="flex items-center">
                     <img
@@ -148,7 +148,7 @@ function ElecProducts() {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl basis-full lg:basis-1/3">
+              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl sm:basis-1/3">
                 <div className="flex flex-col gap-2 p-4 rounded-xl h-full">
                   <div className="flex items-center">
                     <img
@@ -176,7 +176,7 @@ function ElecProducts() {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl basis-full lg:basis-1/3">
+              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl sm:basis-1/3">
                 <div className="flex flex-col gap-2 p-4 rounded-xl h-full">
                   <div className="flex items-center">
                     <img
@@ -204,7 +204,7 @@ function ElecProducts() {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl basis-full lg:basis-1/3">
+              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl sm:basis-1/3">
                 <div className="flex flex-col gap-2 p-4 rounded-xl h-full">
                   <div className="flex items-center">
                     <img
@@ -232,7 +232,7 @@ function ElecProducts() {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl basis-full lg:basis-1/3">
+              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl sm:basis-1/3">
                 <div className="flex flex-col gap-2 p-4 rounded-xl h-full">
                   <div className="flex items-center">
                     <img
@@ -260,7 +260,7 @@ function ElecProducts() {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl basis-full lg:basis-1/3">
+              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl sm:basis-1/3">
                 <div className="flex flex-col gap-2 p-4 rounded-xl h-full">
                   <div className="flex items-center">
                     <img
@@ -288,7 +288,7 @@ function ElecProducts() {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl basis-full lg:basis-1/3">
+              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl sm:basis-1/3">
                 <div className="flex flex-col gap-2 p-4 rounded-xl h-full">
                   <div className="flex items-center">
                     <img
@@ -316,7 +316,7 @@ function ElecProducts() {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl basis-full lg:basis-1/3">
+              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl sm:basis-1/3">
                 <div className="flex flex-col gap-2 p-4 rounded-xl h-full">
                   <div className="flex items-center">
                     <img
@@ -344,7 +344,7 @@ function ElecProducts() {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl basis-full lg:basis-1/3">
+              <CarouselItem className="flex items-center border hover:border-[var(--primary)] duration-300 p-4 rounded-2xl sm:basis-1/3">
                 <div className="flex flex-col gap-2 p-4 rounded-xl h-full">
                   <div className="flex items-center">
                     <img
