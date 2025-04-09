@@ -5,7 +5,7 @@ function OurProducts() {
   return (
     <section>
       <div className="main-container flex items center gap-16 mt-4">
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-center gap-8 lg:gap-0 lg:justify-between w-full flex-wrap">
           <div className="flex flex-col gap-1 cursor-pointer hover:scale-110 duration-300 rounded-xl">
             <img
               src={toys}
