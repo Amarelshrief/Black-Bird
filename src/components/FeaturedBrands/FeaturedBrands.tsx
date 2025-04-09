@@ -5,7 +5,7 @@ function FeaturedBrands() {
     <section className="main-container m-8">
       <div>
         <h2 className="text-2xl font-bold mb-4">Featured Brands</h2>
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center justify-center lg:justify-between gap-8 lg:gap-4 flex-wrap">
           <div>
             <div>
               <img src={alibaba} alt="alibaba" />
