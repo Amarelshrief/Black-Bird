@@ -3,7 +3,7 @@ import { Truck, AlarmClock, HandCoins, CircleDollarSign } from "lucide-react";
 function Advantages() {
   return (
     <section>
-      <div className="main-container grid grid-cols-4 gap-4 w-[100% / 4] m-8">
+      <div className="main-container grid-cols-1 grid md:grid-cols-2 lg:grid-cols-4 gap-4 w-full m-8">
         <div className="flex items-center justify-center gap-4 bg-[var(--input)] hover:bg-[var(--ring)] duration-300 rounded-xl p-5">
           <Truck className="text-[var(--primary)]" size={33} />
           <div className="flex flex-col">
