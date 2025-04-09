@@ -23,7 +23,7 @@ function Announce() {
             <div className="flex items-center gap-2 hover:underline hover:translate-x-2 hover:text-[var(--muted)] duration-300">
               <Button
                 variant="ghost"
-                className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+                className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
               >
                 Shop Now
               </Button>
@@ -68,10 +68,10 @@ function Announce() {
             <p className="text-sm md:text-md tracking-wider text-[var(--secondary)]">
               COLLECTION
             </p>
-            <div className="flex items-center gap-2 hover:underline hover:translate-x-2 hover:text-[var(--muted)] duration-300">
+            <div className="flex items-center gap-2 hover:underline hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
               <Button
                 variant="ghost"
-                className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+                className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
               >
                 Shop Now
               </Button>
