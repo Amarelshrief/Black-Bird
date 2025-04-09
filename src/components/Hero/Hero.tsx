@@ -94,10 +94,10 @@ function Hero() {
                 <p className="text-xl font-bold">
                   SALE <span className="text-[var(--primary)]">20% OFF</span>
                 </p>
-                <div className="flex items-center gap-2 hover:underline hover:translate-x-4 hover:text-[var(--muted)] duration-300">
+                <div className="flex items-center gap-2 hover:underline hover:translate-x-4 hover:text-[var(--secondary)] duration-300">
                   <Button
                     variant="ghost"
-                    className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+                    className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
                   >
                     Shop Now
                   </Button>
@@ -117,10 +117,10 @@ function Hero() {
                 <p className="text-md">GAMING 4K</p>
                 <p className="text-lg font-bold">DESKTOPS &</p>
                 <p className="text-lg font-bold">LAPTOPS</p>
-                <div className="flex items-center gap-2 hover:underline hover:translate-x-4 hover:text-[var(--muted)] duration-300">
+                <div className="flex items-center gap-2 hover:underline hover:translate-x-4 hover:text-[var(--secondary)] duration-300">
                   <Button
                     variant="ghost"
-                    className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+                    className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
                   >
                     Shop Now
                   </Button>
