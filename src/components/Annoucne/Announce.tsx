@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 function Announce() {
   return (
     <section className="main-container m-8">
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         <div className="relative">
           <div className="w-full">
             <img
@@ -16,8 +16,8 @@ function Announce() {
           </div>
           <div className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center gap-2 p-12">
             <p className="text-sm tracking-widest">NEW ARRIVALS</p>
-            <p className="text-xl font-bold">SKI CLOTHES SALE</p>
-            <p className="text-md tracking-wider text-[var(--secondary)]">
+            <p className="text-md md:text-xl font-bold">SKI CLOTHES SALE</p>
+            <p className="text-sm md:text-md tracking-wider text-[var(--secondary)]">
               SALE UP TO 35% OFF
             </p>
             <div className="flex items-center gap-2 hover:underline hover:translate-x-2 hover:text-[var(--muted)] duration-300">
@@ -41,8 +41,8 @@ function Announce() {
           </div>
           <div className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center gap-2 p-12">
             <p className="text-sm tracking-widest">BEST SELLER</p>
-            <p className="text-xl font-bold">TRENDING WOMEN</p>
-            <p className="text-md tracking-wider">SUNGLASSES</p>
+            <p className="text-md md:text-xl font-bold">TRENDING WOMEN</p>
+            <p className="text-sm md:text-md tracking-wider">SUNGLASSES</p>
             <div className="flex items-center gap-2 hover:underline hover:translate-x-2 hover:text-[var(--input)] duration-300">
               <Button
                 variant="ghost"
@@ -64,8 +64,8 @@ function Announce() {
           </div>
           <div className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center gap-2 p-12">
             <p className="text-sm tracking-widest">NEW ARRIVALS</p>
-            <p className="text-xl font-bold">NEW LATEST BAG</p>
-            <p className="text-md tracking-wider text-[var(--secondary)]">
+            <p className="text-md md:text-xl font-bold">NEW LATEST BAG</p>
+            <p className="text-sm md:text-md tracking-wider text-[var(--secondary)]">
               COLLECTION
             </p>
             <div className="flex items-center gap-2 hover:underline hover:translate-x-2 hover:text-[var(--muted)] duration-300">
