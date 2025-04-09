@@ -16,29 +16,29 @@ function Hero() {
   return (
     <section>
       <div className="flex items-center justify-between bg-[var(--card)] p-4">
-        <div className="main-container flex items-center justify-between gap-4">
+        <div className="main-container flex flex-col lg:flex-row items-center justify-between gap-4 overflow-x-hidden">
           <div className="w-full h-full overflow-x-hidden">
             <div className="">
               <div
-                className="flex w-[125vw] h-full transition-transform duration-1000"
-                style={{ transform: `translateX(-${banner * 62.5}vw)` }}
+                className="flex w-[70vw] h-full transition-transform duration-1000"
+                // style={{ transform: `translateX(-${banner * 62.5}vw)` }}
               >
                 <div className="relative">
-                  <div>
+                  <div className="xl:block hidden">
                     <img
-                      src={banners[0]}
+                      src={banners[1]}
                       alt="banner-image"
                       className="rounded-md w-[130rem] h-[33rem] object-cover"
                     />
                   </div>
-                  <div className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center gap-4 p-12">
-                    <p className="text-3xl">LIFESTYLE COLLECTION</p>
-                    <p className="text-4xl font-bold">MEN</p>
-                    <p className="text-3xl">
+                  <div className="xl:absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center gap-4 p-12">
+                    <p className="text-2xl xl:text-3xl">LIFESTYLE COLLECTION</p>
+                    <p className="text-3xl xl:text-4xl font-bold">WOMEN</p>
+                    <p className="text-2xl xl:text-3xl">
                       SALE UP TO{" "}
                       <span className="text-[var(--primary)]">30% OFF</span>
                     </p>
-                    <p className="text-3xl">
+                    <p className="text-2xl xl:text-3xl">
                       Get Free Shipping on orders over{" "}
                       <span className="text-[var(--primary)]">$99.00</span>
                     </p>
@@ -49,7 +49,7 @@ function Hero() {
                     </div>
                   </div>
                 </div>
-                <div className="relative">
+                {/* <div className="relative">
                   <div>
                     <img
                       src={banners[1]}
@@ -74,13 +74,13 @@ function Hero() {
                       </Button>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-between gap-4">
-            <div className="relative">
+          <div className="flex flex-col items-center justify-between gap-4 w-full xl:w-[44rem]">
+            <div className="relative w-full">
               <div>
                 <img
                   src={bannerImg3}
@@ -105,7 +105,7 @@ function Hero() {
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative w-full">
               <div>
                 <img
                   src={bannerImg2}
