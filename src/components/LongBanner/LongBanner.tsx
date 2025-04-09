@@ -5,7 +5,7 @@ function LongBanner() {
     <section className="main-container m-8">
       <div className="bg">
         <div className="flex flex-col items-center justify-center">
-          <div className="w-full h-full flex flex-col items-center justify-center gap-2 p-4">
+          <div className="w-full h-full flex flex-col items-center justify-center gap-2 p-6">
             <p className="tracking-widest text-4xl font-bold">
               GIFT <span className="text-[var(--primary)]">50% OFF</span>{" "}
               PERFECT STYLES
