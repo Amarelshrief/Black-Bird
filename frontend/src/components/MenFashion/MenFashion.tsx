@@ -1,4 +1,4 @@
-import { ChevronRight, Star } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { Button } from "../ui/button";
 import {
   Carousel,
@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { furniture, gaming, shirt, sports } from "@/assets";
+import { Rating } from "react-simple-star-rating";
 
 function MensFashion() {
   return (
@@ -105,11 +106,17 @@ function MensFashion() {
                     <p className="text-[var(--secondary)] font-bold">T-shirt</p>
                     <p className="text-[var(--secondary)] font-bold">$180.00</p>
                     <div className="flex gap-2 items-center">
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
+                      <p className="flex items-center justify-center">
+                        <Rating
+                          initialValue={5}
+                          className="relative bottom-[2px] w-full"
+                          iconsCount={5}
+                          readonly={true}
+                          SVGclassName={`inline-block`}
+                          allowFraction={true}
+                          size={22}
+                        />
+                      </p>
                     </div>
                     <Button
                       variant="outline"
@@ -132,13 +139,17 @@ function MensFashion() {
                   <div className="flex flex-col items-center gap-2">
                     <p className="text-[var(--secondary)] font-bold">T-shirt</p>
                     <p className="text-[var(--secondary)] font-bold">$180.00</p>
-                    <div className="flex gap-2 items-center">
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                    </div>
+                    <p className="flex items-center justify-center">
+                      <Rating
+                        initialValue={5}
+                        className="relative bottom-[2px] w-full"
+                        iconsCount={5}
+                        readonly={true}
+                        SVGclassName={`inline-block`}
+                        allowFraction={true}
+                        size={22}
+                      />
+                    </p>
                     <Button
                       variant="outline"
                       className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
@@ -160,13 +171,17 @@ function MensFashion() {
                   <div className="flex flex-col items-center gap-2">
                     <p className="text-[var(--secondary)] font-bold">T-shirt</p>
                     <p className="text-[var(--secondary)] font-bold">$180.00</p>
-                    <div className="flex gap-2 items-center">
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                    </div>
+                    <p className="flex items-center justify-center">
+                      <Rating
+                        initialValue={5}
+                        className="relative bottom-[2px] w-full"
+                        iconsCount={5}
+                        readonly={true}
+                        SVGclassName={`inline-block`}
+                        allowFraction={true}
+                        size={22}
+                      />
+                    </p>
                     <Button
                       variant="outline"
                       className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
@@ -188,13 +203,17 @@ function MensFashion() {
                   <div className="flex flex-col items-center gap-2">
                     <p className="text-[var(--secondary)] font-bold">T-shirt</p>
                     <p className="text-[var(--secondary)] font-bold">$180.00</p>
-                    <div className="flex gap-2 items-center">
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                    </div>
+                    <p className="flex items-center justify-center">
+                      <Rating
+                        initialValue={5}
+                        className="relative bottom-[2px] w-full"
+                        iconsCount={5}
+                        readonly={true}
+                        SVGclassName={`inline-block`}
+                        allowFraction={true}
+                        size={22}
+                      />
+                    </p>
                     <Button
                       variant="outline"
                       className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
@@ -216,13 +235,17 @@ function MensFashion() {
                   <div className="flex flex-col items-center gap-2">
                     <p className="text-[var(--secondary)] font-bold">T-shirt</p>
                     <p className="text-[var(--secondary)] font-bold">$180.00</p>
-                    <div className="flex gap-2 items-center">
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                    </div>
+                    <p className="flex items-center justify-center">
+                      <Rating
+                        initialValue={5}
+                        className="relative bottom-[2px] w-full"
+                        iconsCount={5}
+                        readonly={true}
+                        SVGclassName={`inline-block`}
+                        allowFraction={true}
+                        size={22}
+                      />
+                    </p>
                     <Button
                       variant="outline"
                       className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
@@ -244,13 +267,17 @@ function MensFashion() {
                   <div className="flex flex-col items-center gap-2">
                     <p className="text-[var(--secondary)] font-bold">T-shirt</p>
                     <p className="text-[var(--secondary)] font-bold">$180.00</p>
-                    <div className="flex gap-2 items-center">
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                    </div>
+                    <p className="flex items-center justify-center">
+                      <Rating
+                        initialValue={5}
+                        className="relative bottom-[2px] w-full"
+                        iconsCount={5}
+                        readonly={true}
+                        SVGclassName={`inline-block`}
+                        allowFraction={true}
+                        size={22}
+                      />
+                    </p>
                     <Button
                       variant="outline"
                       className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
@@ -272,13 +299,17 @@ function MensFashion() {
                   <div className="flex flex-col items-center gap-2">
                     <p className="text-[var(--secondary)] font-bold">T-shirt</p>
                     <p className="text-[var(--secondary)] font-bold">$180.00</p>
-                    <div className="flex gap-2 items-center">
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                    </div>
+                    <p className="flex items-center justify-center">
+                      <Rating
+                        initialValue={5}
+                        className="relative bottom-[2px] w-full"
+                        iconsCount={5}
+                        readonly={true}
+                        SVGclassName={`inline-block`}
+                        allowFraction={true}
+                        size={22}
+                      />
+                    </p>
                     <Button
                       variant="outline"
                       className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
@@ -300,13 +331,17 @@ function MensFashion() {
                   <div className="flex flex-col items-center gap-2">
                     <p className="text-[var(--secondary)] font-bold">T-shirt</p>
                     <p className="text-[var(--secondary)] font-bold">$180.00</p>
-                    <div className="flex gap-2 items-center">
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                    </div>
+                    <p className="flex items-center justify-center">
+                      <Rating
+                        initialValue={5}
+                        className="relative bottom-[2px] w-full"
+                        iconsCount={5}
+                        readonly={true}
+                        SVGclassName={`inline-block`}
+                        allowFraction={true}
+                        size={22}
+                      />
+                    </p>
                     <Button
                       variant="outline"
                       className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
@@ -328,13 +363,17 @@ function MensFashion() {
                   <div className="flex flex-col items-center gap-2">
                     <p className="text-[var(--secondary)] font-bold">T-shirt</p>
                     <p className="text-[var(--secondary)] font-bold">$180.00</p>
-                    <div className="flex gap-2 items-center">
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                    </div>
+                    <p className="flex items-center justify-center">
+                      <Rating
+                        initialValue={5}
+                        className="relative bottom-[2px] w-full"
+                        iconsCount={5}
+                        readonly={true}
+                        SVGclassName={`inline-block`}
+                        allowFraction={true}
+                        size={22}
+                      />
+                    </p>
                     <Button
                       variant="outline"
                       className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
@@ -356,13 +395,17 @@ function MensFashion() {
                   <div className="flex flex-col items-center gap-2">
                     <p className="text-[var(--secondary)] font-bold">T-shirt</p>
                     <p className="text-[var(--secondary)] font-bold">$180.00</p>
-                    <div className="flex gap-2 items-center">
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                      <Star />
-                    </div>
+                    <p className="flex items-center justify-center">
+                      <Rating
+                        initialValue={5}
+                        className="relative bottom-[2px] w-full"
+                        iconsCount={5}
+                        readonly={true}
+                        SVGclassName={`inline-block`}
+                        allowFraction={true}
+                        size={22}
+                      />
+                    </p>
                     <Button
                       variant="outline"
                       className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
