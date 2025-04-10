@@ -1,5 +1,4 @@
 import { Button } from "../ui/button";
-import { ChevronDown, Rat, Star } from "lucide-react";
 import { Product } from "@/Pages/Products";
 import { Rating } from "react-simple-star-rating";
 
