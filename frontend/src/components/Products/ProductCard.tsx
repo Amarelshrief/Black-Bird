@@ -18,7 +18,7 @@ function ProductCard(props: Product) {
             <p className="text-xl text-[var(--secondary)] font-bold">
               {props.title}
             </p>
-            <p className="text-[var(--secondary)] font-bold">{props.price}</p>
+            <p className="text-[var(--secondary)] font-bold">${props.price}</p>
             <p className="text-[var(--secondary)] text-sm text-center leading-6">
               {props.description}
             </p>
