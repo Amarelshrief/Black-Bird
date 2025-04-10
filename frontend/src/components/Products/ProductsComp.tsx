@@ -14,7 +14,7 @@ function ProductsComp() {
 
   if (isPending) {
     content = (
-      <div className="flex items-center justify-center">
+      <div className="flex items-start">
         <p className="text-xl text-[var(--secondary)] font-bold">
           Fetching Data...
         </p>
@@ -24,7 +24,7 @@ function ProductsComp() {
 
   if (isError) {
     content = (
-      <div className="flex items-center justify-center">
+      <div className="flex items-start">
         <p className="text-xl text-[var(--secondary)] font-bold">
           Error Fetching Data...
         </p>
