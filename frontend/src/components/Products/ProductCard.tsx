@@ -1,12 +1,19 @@
 import { Button } from "../ui/button";
 import { Product } from "@/Pages/Products";
+import { useNavigate } from "react-router-dom";
 import { Rating } from "react-simple-star-rating";
 
 function ProductCard(props: Product) {
+  const title = props.title.toLowerCase().split(" ").join("-");
+  const navigate = useNavigate();
+
+  function showProduct() {
+    navigate(`/products/${props.title}`, { state: { product: props } });
+  }
   return (
     <div className="">
-      <div className="gap-8 mt-8">
-        <div className="flex flex-col gap-4 p-6 rounded-xl h-full shadow-2xl">
+      <div onClick={showProduct} className="gap-8 mt-8 rounded-2xl">
+        <div className="flex flex-col gap-4 p-6 rounded-xl h-[50%] md:h-full shadow-2xl">
           <div className="w-full h-full">
             <img
               src={`${import.meta.env.VITE_BASE_URL}${props.image.url}`}
