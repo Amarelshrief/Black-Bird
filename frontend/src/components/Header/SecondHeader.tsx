@@ -1,12 +1,23 @@
 import { useState } from "react";
 import { useTheme } from "@/components/Theme/Theme";
 
-import { Bird, ShoppingCart, User, Sun, Moon } from "lucide-react";
+import { Bird, ShoppingCart, User, Sun, Moon, Minus, Plus } from "lucide-react";
 import { Input } from "../ui/input";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+
+import { Button } from "@/components/ui/button";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 import { Link } from "react-router-dom";
 
 function SecondHeader() {
@@ -57,9 +68,35 @@ function SecondHeader() {
                 <li>
                   <User className="py-2 cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
                 </li>
-                <li>
-                  <ShoppingCart className="py-2 cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
-                </li>
+                <Drawer direction="right">
+                  <DrawerTrigger>
+                    <li>
+                      <ShoppingCart className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
+                    </li>
+                  </DrawerTrigger>
+                  <DrawerContent className="">
+                    <DrawerHeader>
+                      <DrawerTitle>
+                        <ShoppingCart className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
+                      </DrawerTitle>
+                    </DrawerHeader>
+                    <DrawerFooter className="">
+                      <Button className="h-[2.7rem] cursor-pointer">
+                        Checkout
+                      </Button>
+                      <DrawerClose>
+                        <Link to={"/products"}>
+                          <Button
+                            variant={"outline"}
+                            className="w-full h-[2.7rem] cursor-pointer"
+                          >
+                            View Cart
+                          </Button>
+                        </Link>
+                      </DrawerClose>
+                    </DrawerFooter>
+                  </DrawerContent>
+                </Drawer>
               </ul>
             </div>
           ) : (
@@ -78,9 +115,39 @@ function SecondHeader() {
               <li>
                 <User className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
               </li>
-              <li>
-                <ShoppingCart className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
-              </li>
+              <Drawer direction="right">
+                <DrawerTrigger>
+                  <li>
+                    <ShoppingCart className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
+                  </li>
+                </DrawerTrigger>
+                <DrawerContent className="">
+                  <DrawerHeader>
+                    <DrawerTitle className="flex items-center gap-2">
+                      <ShoppingCart className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
+                      <span className="text-[var(--secondary)] font-bold">
+                        {3} items
+                      </span>
+                    </DrawerTitle>
+                  </DrawerHeader>
+                  <div></div>
+                  <DrawerFooter>
+                    <Button className="h-[2.7rem] cursor-pointer">
+                      Checkout
+                    </Button>
+                    <DrawerClose>
+                      <Link to={"/products"}>
+                        <Button
+                          variant={"outline"}
+                          className="w-full h-[2.7rem] cursor-pointer text-[var(--secondary)] hover:bg-[var(--secondary)]/20 duration-200"
+                        >
+                          View Cart
+                        </Button>
+                      </Link>
+                    </DrawerClose>
+                  </DrawerFooter>
+                </DrawerContent>
+              </Drawer>
             </ul>
           )}
           <div
