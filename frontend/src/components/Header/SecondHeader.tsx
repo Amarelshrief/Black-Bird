@@ -19,8 +19,11 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Link } from "react-router-dom";
+import { gaming } from "@/assets";
 
 function SecondHeader() {
+  const [numOfItems, setNumOfItems] = useState(0);
+  const [quantity, setQuantity] = useState(0);
   const [navBar, setNavBar] = useState<boolean>(false);
   const [dark, setDark] = useState(
     localStorage.getItem("black-bird-theme") === "dark"
@@ -33,6 +36,14 @@ function SecondHeader() {
 
   function makeItAppear() {
     setNavBar(!navBar);
+  }
+
+  function plusOne() {
+    setQuantity(quantity + 1);
+  }
+
+  function minusOne() {
+    setQuantity(quantity - 1);
   }
   return (
     <header>
@@ -117,8 +128,11 @@ function SecondHeader() {
               </li>
               <Drawer direction="right">
                 <DrawerTrigger>
-                  <li>
+                  <li className="flex items-center">
                     <ShoppingCart className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
+                    {/* <span className="bg-red-500 rounded-full h-6 w-6 text-[var(--secondary)] font-bold">
+                      {numOfItems}
+                    </span> */}
                   </li>
                 </DrawerTrigger>
                 <DrawerContent className="">
@@ -126,11 +140,38 @@ function SecondHeader() {
                     <DrawerTitle className="flex items-center gap-2">
                       <ShoppingCart className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
                       <span className="text-[var(--secondary)] font-bold">
-                        {3} items
+                        {numOfItems} items
                       </span>
                     </DrawerTitle>
                   </DrawerHeader>
-                  <div></div>
+                  <div className="flex items-center gap-2 p-4">
+                    <div>
+                      <img src={gaming} alt="gaming" className="w-18" />
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      <p className="font-bold">PRODUCT TITLE</p>
+                      <p className="text-sm text-[var(--secondary)]">
+                        PRODUCT PRICE
+                      </p>
+                      <div className="flex items-center gap-2">
+                        <Button
+                          onClick={plusOne}
+                          variant="outline"
+                          className="cursor-pointer text-[var(--secondary)] hover:bg-[var(--secondary)]/20 duration-200"
+                        >
+                          +
+                        </Button>
+                        <span>{quantity}</span>
+                        <Button
+                          onClick={minusOne}
+                          variant="outline"
+                          className="cursor-pointer text-[var(--secondary)] hover:bg-[var(--secondary)]/20 duration-200"
+                        >
+                          -
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
                   <DrawerFooter>
                     <Button className="h-[2.7rem] cursor-pointer">
                       Checkout
