@@ -1,28 +1,19 @@
 import { Button } from "../ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 import ProductCard from "./ProductCard";
 import { useQuery } from "@tanstack/react-query";
 import { getProducts } from "@/API/Api";
 import { Product } from "@/Pages/Products";
 
 function ProductsComp() {
-  const { data, isPending, isError } = useQuery({
+  const productQuery = useQuery({
     queryKey: ["products"],
     queryFn: getProducts,
   });
 
   let content;
 
-  if (isPending) {
-    content = (
-      <div className="flex items-start">
-        <p className="text-xl text-[var(--secondary)] font-bold">
-          Fetching Data...
-        </p>
-      </div>
-    );
-  }
-
-  if (isError) {
+  if (productQuery.isError) {
     content = (
       <div className="flex items-start">
         <p className="text-xl text-[var(--secondary)] font-bold">
@@ -32,17 +23,19 @@ function ProductsComp() {
     );
   }
 
-  if (data) {
-    content = data.data.map((product: Product) => (
+  if (productQuery.data) {
+    content = productQuery.data.data.map((product: Product) => (
       <ProductCard key={product.id} {...product} />
     ));
   }
 
   return (
     <section className="main-container m-8">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex flex-col gap-2 ">
-          <h1 className="text-3xl font-bold text-[var(--primary)]">Products</h1>
+          <h1 className="flex items-center justify-center md:justify-start text-3xl font-bold text-[var(--primary)]">
+            Products
+          </h1>
           <p className="text-sm text-[var(--secondary)]">
             All our new arrivals in a exclusive brand selection
           </p>
@@ -66,6 +59,14 @@ function ProductsComp() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-8">
+        {productQuery.isPending && (
+          <>
+            <SkeletonCard />
+            <SkeletonCard />
+            <SkeletonCard />
+            <SkeletonCard />
+          </>
+        )}
         {content}
       </div>
     </section>
@@ -73,3 +74,15 @@ function ProductsComp() {
 }
 
 export default ProductsComp;
+
+function SkeletonCard() {
+  return (
+    <div className="flex flex-col space-y-3">
+      <Skeleton className="md:h-[25rem] w-full rounded-xl" />
+      <div className="space-y-2">
+        <Skeleton className="" />
+        <Skeleton className="" />
+      </div>
+    </div>
+  );
+}
