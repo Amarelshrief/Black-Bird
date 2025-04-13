@@ -16,7 +16,7 @@ function ElecProducts() {
       <div className="flex flex-col xl:flex-row items-center justify-between">
         <div className="flex flex-col w-full">
           <h2 className="mb-4 text-2xl font-bold">Electronic Products</h2>
-          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
+          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
             <Button
               variant="ghost"
               className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
@@ -24,7 +24,7 @@ function ElecProducts() {
               Wireless Speaker
             </Button>
           </div>
-          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
+          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
             <Button
               variant="ghost"
               className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
@@ -32,7 +32,7 @@ function ElecProducts() {
               Tablet
             </Button>
           </div>
-          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
+          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
             <Button
               variant="ghost"
               className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
@@ -40,7 +40,7 @@ function ElecProducts() {
               Smartphone
             </Button>
           </div>
-          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
+          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
             <Button
               variant="ghost"
               className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
@@ -48,7 +48,7 @@ function ElecProducts() {
               Laptop
             </Button>
           </div>
-          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
+          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
             <Button
               variant="ghost"
               className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
@@ -56,7 +56,7 @@ function ElecProducts() {
               iMac
             </Button>
           </div>
-          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
+          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
             <Button
               variant="ghost"
               className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
@@ -64,7 +64,7 @@ function ElecProducts() {
               Game Controller
             </Button>
           </div>
-          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
+          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
             <Button
               variant="ghost"
               className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
@@ -72,7 +72,7 @@ function ElecProducts() {
               Drone
             </Button>
           </div>
-          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--muted)] duration-300">
+          <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
             <Button
               variant="ghost"
               className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
@@ -80,7 +80,7 @@ function ElecProducts() {
               Apple
             </Button>
           </div>
-          <div className="-ml-3 flex items-center gap-2 hover:underline hover:translate-x-2 hover:text-[var(--muted)] duration-300 mt-4">
+          <div className="-ml-3 flex items-center gap-2 hover:underline hover:translate-x-2 hover:text-[var(--secondary)] duration-300 mt-4">
             <Button
               variant="ghost"
               className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
