@@ -13,11 +13,11 @@ interface Product {
   };
 }
 
-export interface Products {
+export interface CounterState {
   products: Product[];
 }
 
-const initialState: Products = {
+const initialState: CounterState = {
   products: [],
 };
 
@@ -27,26 +27,28 @@ const productSlice = createSlice({
   reducers: {
     addToCart: (state, action) => {
       const product = state.products.find(
-        (product) => product.id === action.payload
+        (product) => product.id === action.payload.id
       );
       if (product) {
         product.quantity += action.payload.quantity;
       } else {
-        state.products.push(action.payload);
+        state.products.push({
+          ...action.payload,
+          quantity: action.payload.quantity,
+        });
       }
     },
     removeFromCart: (state, action) => {
-      const product = state.products.filter(
+      state.products = state.products.filter(
         (product) => product.id !== action.payload
       );
-      state.products = product;
     },
     resetCart: (state) => {
       state.products = [];
     },
     incrementQuantity: (state, action) => {
       const product = state.products.find(
-        (product) => product.id === action.payload
+        (product) => product.id === action.payload.id
       );
       if (product) {
         product.quantity++;
@@ -54,7 +56,7 @@ const productSlice = createSlice({
     },
     decrementQuantity: (state, action) => {
       const product = state.products.find(
-        (product) => product.id === action.payload
+        (product) => product.id === action.payload.id
       );
       if (product!.quantity === 1) {
         product!.quantity = 1;
