@@ -1,23 +1,78 @@
 import { Button } from "../ui/button";
 import { Product } from "@/Pages/Products";
 import { Rating } from "react-simple-star-rating";
-import { useDispatch } from "react-redux";
 import { addToCart } from "@/store/productSlice";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { useAppDispatch } from "@/hooks/useAppDispatch";
+import { ShoppingCart } from "lucide-react";
 
 function ProductCard(props: Product) {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   return (
     <div className="">
       <div className="gap-8 mt-8 rounded-2xl">
         <div className="flex flex-col gap-4 p-6 rounded-xl h-[50%] md:h-full shadow-2xl">
-          <div className="w-full h-full">
-            <img
-              src={`${import.meta.env.VITE_BASE_URL}${props.image.url}`}
-              alt={props.title}
-              className="hover:scale-105 duration-300 cursor-pointer bg object-cover"
-            />
-          </div>
+          <Dialog>
+            <DialogTrigger asChild>
+              <div className="w-full h-full">
+                <img
+                  src={`${import.meta.env.VITE_BASE_URL}${props.image.url}`}
+                  alt={props.title}
+                  className="hover:scale-105 duration-300 cursor-pointer bg object-cover md:h-[25rem]"
+                />
+              </div>
+            </DialogTrigger>
+            <DialogContent className="">
+              <div className="flex items-center gap-3">
+                <div>
+                  <img
+                    src={`${import.meta.env.VITE_BASE_URL}${props.image.url}`}
+                    alt={props.title}
+                    className="w-[40rem] object-cover"
+                  />
+                </div>
+                <div className="flex flex-col gap-4">
+                  <DialogHeader className="">
+                    <DialogTitle className="text-xl font-bold text-[var(--primary)]">
+                      {props.title}
+                    </DialogTitle>
+                    <p>Price: ${props.price}</p>
+                    <DialogDescription>{props.description}</DialogDescription>
+                  </DialogHeader>
+                  <div>
+                    <Button
+                      onClick={() =>
+                        dispatch(
+                          addToCart({
+                            id: props.id,
+                            title: props.title,
+                            price: props.price,
+                            description: props.description,
+                            quantity: 1,
+                            rate: props.rate,
+                            category: props.category,
+                            image: props.image,
+                          })
+                        )
+                      }
+                      className="flex items-center gap-2 text-[var(--input)] cursor-pointer duration-200"
+                    >
+                      <ShoppingCart />
+                      Buy Now
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </DialogContent>
+          </Dialog>
           <div className="flex flex-col items-center gap-2">
             <p className="text-xl text-[var(--secondary)] font-bold">
               {props.title}
