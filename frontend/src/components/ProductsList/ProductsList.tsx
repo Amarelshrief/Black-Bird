@@ -1,6 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
+import { Skeleton } from "../ui/skeleton";
 import {
   Carousel,
   CarouselContent,
@@ -14,35 +15,42 @@ import { getProducts } from "@/API/Api";
 import { Product } from "@/Pages/Products";
 
 function ProductsList() {
-  const { data, isPending, isError } = useQuery({
+  const productQuery = useQuery({
     queryKey: ["products"],
     queryFn: getProducts,
   });
 
   let content;
 
-  if (isPending) {
+  if (productQuery.isPending) {
+    content = (
+      <>
+        <div className="flex items-start sm:hidden">
+          <p className="text-xl text-[var(--secondary)] font-bold">
+            Fetching Data...
+          </p>
+        </div>
+        <div className="w-full hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+          <SkeletonCard />
+          <SkeletonCard />
+          <SkeletonCard />
+        </div>
+      </>
+    );
+  }
+
+  if (productQuery.isError) {
     content = (
       <div className="flex items-start">
         <p className="text-xl text-[var(--secondary)] font-bold">
-          Fetching Data...
+          Error Fetching Data.
         </p>
       </div>
     );
   }
 
-  if (isError) {
-    content = (
-      <div className="flex items-start">
-        <p className="text-xl text-[var(--secondary)] font-bold">
-          Error Fetching Data...
-        </p>
-      </div>
-    );
-  }
-
-  if (data) {
-    content = data.data.map((product: Product) => (
+  if (productQuery.data) {
+    content = productQuery.data.data.map((product: Product) => (
       <CarouselItem
         key={product.id}
         className="flex items-center border p-8 rounded-2xl sm:basis-1/3 lg:basis-1/5 hover:border hover:border-[var(--primary)] duration-300"
@@ -117,3 +125,15 @@ function ProductsList() {
 }
 
 export default ProductsList;
+
+function SkeletonCard() {
+  return (
+    <div className="flex flex-col space-y-3">
+      <Skeleton className="md:h-[20rem] w-full rounded-xl" />
+      <div className="space-y-2">
+        <Skeleton className="" />
+        <Skeleton className="" />
+      </div>
+    </div>
+  );
+}
