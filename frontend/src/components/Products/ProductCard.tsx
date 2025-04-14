@@ -1,7 +1,8 @@
-import { Button } from "../ui/button";
 import { Product } from "@/Pages/Products";
 import { Rating } from "react-simple-star-rating";
 import { addToCart } from "@/store/productSlice";
+import { Button } from "../ui/button";
+import { Toaster, toast } from "sonner";
 import {
   Dialog,
   DialogContent,
@@ -47,7 +48,7 @@ function ProductCard(props: Product) {
                     <p>Price: ${props.price}</p>
                     <DialogDescription>{props.description}</DialogDescription>
                   </DialogHeader>
-                  <div>
+                  <div className="flex items-center gap-2 text-[var(--input)] cursor-pointer duration-200 w-[6.5rem] bg-blue-500">
                     <Button
                       onClick={() =>
                         dispatch(
@@ -61,7 +62,7 @@ function ProductCard(props: Product) {
                             category: props.category,
                             image: props.image,
                           })
-                        )
+                        ) && toast.success("Product Added to Cart")
                       }
                       className="flex items-center gap-2 text-[var(--input)] cursor-pointer duration-200"
                     >
@@ -78,7 +79,7 @@ function ProductCard(props: Product) {
               {props.title}
             </p>
             <p className="text-[var(--secondary)] font-bold">${props.price}</p>
-            <p className="text-[var(--secondary)] text-sm text-center leading-6">
+            <p className="text-[var(--muted)] text-sm text-center leading-6">
               {props.description}
             </p>
             <p className="flex items-center justify-center">
@@ -92,7 +93,7 @@ function ProductCard(props: Product) {
                 size={22}
               />
             </p>
-            <p className="text-sm font-bold text-[var(--secondary)]">
+            <p className="text-sm font-bold text-[var(--muted)]">
               {props.category}
             </p>
             <Button
@@ -108,7 +109,7 @@ function ProductCard(props: Product) {
                     category: props.category,
                     image: props.image,
                   })
-                )
+                ) && toast.success("Product Added to Cart")
               }
               variant="outline"
               className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 hover:text-[var(--input)] duration-200 cursor-pointer"
@@ -118,6 +119,7 @@ function ProductCard(props: Product) {
           </div>
         </div>
       </div>
+      <Toaster position="top-left" />
     </div>
   );
 }
