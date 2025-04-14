@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useTheme } from "@/components/Theme/Theme";
 
 import { Bird, ShoppingCart, User, Sun, Moon, OctagonX } from "lucide-react";
-import { Input } from "../ui/input";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -59,21 +58,21 @@ function SecondHeader() {
   }, [productData]);
 
   return (
-    <header>
-      <div className="main-container flex items-center justify-between p-2">
+    <header className="bg-[var(--foreground)] h-14">
+      <div className="main-container flex items-center justify-between">
         <Link to={"/"}>
           <div className="flex items-center justify-between gap-1 cursor-pointer text-[var(--primary)]">
             <Bird />
             <h1 className="text-2xl font-bold">BlackBird</h1>
           </div>
         </Link>
-        <div className="w-2/3">
+        {/* <div className="w-2/3">
           <Input
             type="search"
             placeholder="Search for products"
             className="h-12 p-4 rounded-xl"
           />
-        </div>
+        </div> */}
         <div className="flex items-center gap-4">
           {navBar ? (
             <div className="bg-slate-200 absolute right-0 top-14 w-52">
