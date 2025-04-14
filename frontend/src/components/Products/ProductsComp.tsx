@@ -13,9 +13,27 @@ function ProductsComp() {
 
   let content;
 
+  if (productQuery.isPending) {
+    content = (
+      <>
+        <div className="flex items-center justify-center md:hidden">
+          <p className="text-xl text-[var(--secondary)] font-bold">
+            Fetching Data...
+          </p>
+        </div>
+        <>
+          <SkeletonCard />
+          <SkeletonCard />
+          <SkeletonCard />
+          <SkeletonCard />
+        </>
+      </>
+    );
+  }
+
   if (productQuery.isError) {
     content = (
-      <div className="flex items-start">
+      <div className="flex items-center justify-center md:items-start md:justify-start">
         <p className="text-xl text-[var(--secondary)] font-bold">
           Error Fetching Data...
         </p>
@@ -30,7 +48,7 @@ function ProductsComp() {
   }
 
   return (
-    <section className="main-container m-8">
+    <section className="main-container m-16">
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex flex-col gap-2 ">
           <h1 className="flex items-center justify-center md:justify-start text-3xl font-bold text-[var(--primary)]">
@@ -59,14 +77,6 @@ function ProductsComp() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-8">
-        {productQuery.isPending && (
-          <>
-            <SkeletonCard />
-            <SkeletonCard />
-            <SkeletonCard />
-            <SkeletonCard />
-          </>
-        )}
         {content}
       </div>
     </section>
