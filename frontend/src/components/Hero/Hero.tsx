@@ -14,7 +14,7 @@ function Hero() {
     return () => clearInterval(nextImgInterval);
   }, [banners]);
   return (
-    <section>
+    <section className="mt-16">
       <div className="flex items-center justify-between bg-[var(--card)] p-4">
         <div className="main-container flex flex-col lg:flex-row items-center justify-between gap-4 overflow-x-hidden">
           <div className="w-full h-full overflow-x-hidden">
