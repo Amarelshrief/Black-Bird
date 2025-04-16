@@ -48,7 +48,7 @@ function ProductCard(props: Product) {
                     <p>Price: ${props.price}</p>
                     <DialogDescription>{props.description}</DialogDescription>
                   </DialogHeader>
-                  <div className="flex items-center gap-2 text-[var(--input)] cursor-pointer duration-200 w-[6.5rem] bg-blue-500">
+                  <div className="flex items-center gap-2 text-[var(--input)] cursor-pointer duration-200 w-[6.5rem]">
                     <Button
                       onClick={() =>
                         dispatch(
