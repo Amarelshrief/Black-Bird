@@ -25,7 +25,7 @@ function CartItems() {
     setTotalAmt(price);
   }, [productData]);
   return (
-    <section className="main-container m-16">
+    <section className="mt-4">
       <div className="flex items-start justify-between gap-24">
         <div className="flex flex-col gap-4 w-3/4">
           {productData.map((product) => (
@@ -121,12 +121,15 @@ function CartItems() {
               </span>
             </div>
             <div>
-              <Textarea placeholder="Additional Comments" />
+              <Textarea
+                placeholder="Additional Comments"
+                className="hover:border-primary"
+              />
             </div>
             <div className="mt-4">
               <Input
                 placeholder="Voucher"
-                className="h-14 focus:text-translate-12"
+                className="h-14 hover:border-primary"
               />
             </div>
             <div className="mt-4">
@@ -145,13 +148,13 @@ function CartItems() {
             <div className="mt-4">
               <Input
                 placeholder="Country"
-                className="h-14 focus:text-translate-12"
+                className="h-14 hover:border-primary"
               />
             </div>
             <div className="mt-4">
               <Input
                 placeholder="Zip Code"
-                className="h-14 focus:text-translate-12"
+                className="h-14 hover:border-primary"
               />
             </div>
             <div className="mt-4">
