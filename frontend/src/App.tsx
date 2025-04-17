@@ -4,6 +4,8 @@ import Home from "./Pages/Home";
 import Cart from "./Pages/Cart";
 import Products from "./Pages/Products";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Details from "./components/CartItems/Details";
+import Payment from "./components/CartItems/Payment";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +15,8 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/cart", element: <Cart /> },
       { path: "/products", element: <Products /> },
+      { path: "/checkout", element: <Details /> },
+      { path: "/payment", element: <Payment /> },
     ],
   },
 ]);
