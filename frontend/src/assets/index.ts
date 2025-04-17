@@ -19,6 +19,8 @@ import levis from "./levis.webp";
 import lotto from "./lotto.webp";
 import raymond from "./raymond.webp";
 import samsung from "./samsung.webp";
+import cartImg from "./bgCartImg.jpg";
+import menuIcon from "./store.svg";
 
 export {
   bannerImg1,
@@ -42,4 +44,6 @@ export {
   lotto,
   raymond,
   samsung,
+  cartImg,
+  menuIcon,
 };
