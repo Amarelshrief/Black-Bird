@@ -17,6 +17,14 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 import { Link } from "react-router-dom";
 import { useAppSelector } from "@/hooks/useAppSelector";
 import { RootState } from "@/store/store";
@@ -27,11 +35,12 @@ import {
   removeFromCart,
   resetCart,
 } from "@/store/productSlice";
+import { menuIcon } from "@/assets";
 
 function SecondHeader() {
   const [totalAmt, setTotalAmt] = useState<number>(0);
   const productData = useAppSelector(
-    (state: RootState) => state.product.products
+    (state: RootState) => state.product?.products
   );
   const dispatch = useAppDispatch();
   const [navBar, setNavBar] = useState<boolean>(false);
@@ -59,42 +68,320 @@ function SecondHeader() {
 
   return (
     <header className="bg-[var(--foreground)] h-14">
-      <div className="main-container flex items-center justify-between">
+      <div className="main-container flex items-center justify-between p-2 lg:p-0">
         <Link to={"/"}>
           <div className="flex items-center justify-between gap-1 cursor-pointer text-[var(--primary)]">
             <Bird />
             <h1 className="text-2xl font-bold">BlackBird</h1>
           </div>
         </Link>
-        {/* <div className="w-2/3">
-          <Input
-            type="search"
-            placeholder="Search for products"
-            className="h-12 p-4 rounded-xl"
-          />
-        </div> */}
+        <div>
+          <div className="">
+            <Drawer>
+              <DrawerTrigger>
+                <div>
+                  <img src={menuIcon} alt="" />
+                </div>
+              </DrawerTrigger>
+              <DrawerContent>
+                <DrawerHeader>
+                  <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+                </DrawerHeader>
+                <DrawerFooter>
+                  <Button>Submit</Button>
+                  <DrawerClose>
+                    <Button variant="outline">Cancel</Button>
+                  </DrawerClose>
+                </DrawerFooter>
+              </DrawerContent>
+            </Drawer>
+          </div>
+          <ul className="hidden lg:flex items-center gap-6 text-[var(--primary)]">
+            <li>
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="cursor-pointer">
+                      Home
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent className="">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm">
+                        <NavigationMenuLink
+                          onClick={() => {
+                            const element =
+                              document.getElementById("advantages");
+                            element?.scrollIntoView({
+                              behavior: "smooth",
+                            });
+                          }}
+                          className="hover:bg-transparent"
+                        >
+                          Advantages
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink
+                          onClick={() => {
+                            const element =
+                              document.getElementById("categories");
+                            element?.scrollIntoView({
+                              behavior: "smooth",
+                            });
+                          }}
+                          className="hover:bg-transparent"
+                        >
+                          Categories
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink
+                          onClick={() => {
+                            const element = document.getElementById("products");
+                            element?.scrollIntoView({
+                              behavior: "smooth",
+                            });
+                          }}
+                          className="hover:bg-transparent"
+                        >
+                          Products
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink
+                          onClick={() => {
+                            const element = document.getElementById("announce");
+                            element?.scrollIntoView({
+                              behavior: "smooth",
+                            });
+                          }}
+                          className="hover:bg-transparent"
+                        >
+                          Announce
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink
+                          onClick={() => {
+                            const element =
+                              document.getElementById("electronic");
+                            element?.scrollIntoView({
+                              behavior: "smooth",
+                            });
+                          }}
+                          className="hover:bg-transparent"
+                        >
+                          Electronic Products
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink
+                          onClick={() => {
+                            const element = document.getElementById("market");
+                            element?.scrollIntoView({
+                              behavior: "smooth",
+                            });
+                          }}
+                          className="hover:bg-transparent"
+                        >
+                          Market
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink
+                          onClick={() => {
+                            const element = document.getElementById("men");
+                            element?.scrollIntoView({
+                              behavior: "smooth",
+                            });
+                          }}
+                          className="hover:bg-transparent"
+                        >
+                          Men Products
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink
+                          onClick={() => {
+                            const element = document.getElementById("women");
+                            element?.scrollIntoView({
+                              behavior: "smooth",
+                            });
+                          }}
+                          className="hover:bg-transparent"
+                        >
+                          Women Products
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink
+                          onClick={() => {
+                            const element = document.getElementById("brands");
+                            element?.scrollIntoView({
+                              behavior: "smooth",
+                            });
+                          }}
+                          className="hover:bg-transparent"
+                        >
+                          Featured Brands
+                        </NavigationMenuLink>
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+            </li>
+            <li>
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="cursor-pointer">
+                      Pages
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink className="hover:bg-transparent">
+                          <Link to={"/products"}>Products</Link>
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink className="hover:bg-transparent">
+                          <Link to={"/cart"}>Cart</Link>
+                        </NavigationMenuLink>
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+            </li>
+            <li>
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="cursor-pointer">
+                      Full Screen Menu
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink className="hover:bg-transparent">
+                          Link
+                        </NavigationMenuLink>
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+            </li>
+            <li>
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="cursor-pointer">
+                      Pages
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink className="hover:bg-transparent">
+                          Link
+                        </NavigationMenuLink>
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+            </li>
+            <li>
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="cursor-pointer">
+                      User Account
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink className="hover:bg-transparent">
+                          Market
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink className="hover:bg-transparent">
+                          Gadget
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink className="hover:bg-transparent">
+                          Fashion
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink className="hover:bg-transparent">
+                          Electronics
+                        </NavigationMenuLink>
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+            </li>
+            <li>
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="cursor-pointer">
+                      Vendor Account
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink className="hover:bg-transparent">
+                          Link
+                        </NavigationMenuLink>
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+            </li>
+          </ul>
+        </div>
         <div className="flex items-center gap-4">
           {navBar ? (
-            <div className="bg-slate-200 absolute right-0 top-14 w-52">
-              <ul className="flex flex-col gap-2">
-                <li className="py-2 text-[var(--primary)] cursor-pointer hover:text-[var(--secondary)] flex items-center justify-center duration-150">
+            <div className="bg-[var(--foreground)] rounded-md absolute right-0 top-14 w-52">
+              <ul className="flex flex-col gap-2 p-4 lg:p-0">
+                <li className="text-[var(--primary)] cursor-pointer hover:text-[var(--secondary)] flex items-center lg:justify-center hover:translate-x-2 duration-150">
                   <DropdownMenu>
                     <DropdownMenuTrigger
                       className="cursor-pointer"
                       onClick={toggleDark}
                     >
-                      {dark && <Sun onClick={() => setTheme("light")} />}
-                      {!dark && <Moon onClick={() => setTheme("dark")} />}
+                      {dark && (
+                        <div
+                          onClick={() => setTheme("light")}
+                          className="flex items-center gap-2"
+                        >
+                          {" "}
+                          <Sun /> <p className="flex lg:hidden">Light</p>
+                        </div>
+                      )}
+                      {!dark && (
+                        <div
+                          onClick={() => setTheme("dark")}
+                          className="flex items-center gap-2"
+                        >
+                          {" "}
+                          <Moon /> <p className="flex lg:hidden">Dark</p>
+                        </div>
+                      )}
                     </DropdownMenuTrigger>
                   </DropdownMenu>
                 </li>
-                <li>
-                  <User className="py-2 cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
+                <li className="flex items-center gap-2 cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] hover:translate-x-2 duration-150">
+                  <User className="" />
+                  <p className="flex lg:hidden">User Account</p>
                 </li>
                 <Drawer direction="right">
                   <DrawerTrigger>
-                    <li>
-                      <ShoppingCart className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
+                    <li className="flex items-center gap-2 cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] hover:translate-x-2 duration-150">
+                      <ShoppingCart className="" />
+                      <p className="flex lg:hidden">Cart</p>
                     </li>
                   </DrawerTrigger>
                   <DrawerContent className="">
@@ -123,7 +410,7 @@ function SecondHeader() {
               </ul>
             </div>
           ) : (
-            <ul className="md:flex items-center gap-4 hidden">
+            <ul className="lg:flex items-center gap-4 hidden">
               <li className="text-[var(--primary)] cursor-pointer hover:text-[var(--secondary)] flex items-center justify-center duration-150">
                 <DropdownMenu>
                   <DropdownMenuTrigger
@@ -257,11 +544,11 @@ function SecondHeader() {
           )}
           <div
             onClick={makeItAppear}
-            className="flex flex-col gap-1 md:hidden cursor-pointer px-2 items-center justify-between"
+            className="flex flex-col gap-1 lg:hidden cursor-pointer px-2 items-center justify-between"
           >
-            <span className="bg-black w-8 h-1"></span>
-            <span className="bg-black w-8 h-1"></span>
-            <span className="bg-black w-8 h-1"></span>
+            <span className="bg-[var(--primary)] w-8 h-1"></span>
+            <span className="bg-[var(--primary)] w-8 h-1"></span>
+            <span className="bg-[var(--primary)] w-8 h-1"></span>
           </div>
         </div>
       </div>
