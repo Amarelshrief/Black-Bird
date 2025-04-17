@@ -240,6 +240,11 @@ function SecondHeader() {
                     <NavigationMenuContent>
                       <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
                         <NavigationMenuLink className="hover:bg-transparent">
+                          <Link to={"/"}>Home</Link>
+                        </NavigationMenuLink>
+                      </div>
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                        <NavigationMenuLink className="hover:bg-transparent">
                           <Link to={"/products"}>Products</Link>
                         </NavigationMenuLink>
                       </div>
