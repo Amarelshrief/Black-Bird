@@ -92,33 +92,35 @@ function ProductsList() {
   }
 
   return (
-    <section className="main-container">
-      <div className="flex items-center justify-between gap-4 mt-8">
-        <div>
-          <h2 className="text-xl text-[var(--primary)] font-bold">
-            Deals Of The Day
-          </h2>
+    <section className="mt-8" id="products">
+      <div className="main-container ">
+        <div className="flex items-center justify-between gap-4">
+          <div>
+            <h2 className="text-xl text-[var(--primary)] font-bold">
+              Deals Of The Day
+            </h2>
+          </div>
+          <div>
+            <Link to={"/products"}>
+              <div className="flex items-center gap-2 hover:underline hover:translate-x-4 hover:text-[var(--muted)] duration-300">
+                <Button
+                  variant="ghost"
+                  className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+                >
+                  More Products
+                </Button>
+                <ChevronRight size={18} />
+              </div>
+            </Link>
+          </div>
         </div>
-        <div>
-          <Link to={"/products"}>
-            <div className="flex items-center gap-2 hover:underline hover:translate-x-4 hover:text-[var(--muted)] duration-300">
-              <Button
-                variant="ghost"
-                className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
-              >
-                More Products
-              </Button>
-              <ChevronRight size={18} />
-            </div>
-          </Link>
+        <div className="mt-4 max-w-full p-8 sm:p-16 lg:p-0">
+          <Carousel className="">
+            <CarouselContent className="ml-0 flex">{content}</CarouselContent>
+            <CarouselPrevious variant="default" className="cursor-pointer" />
+            <CarouselNext variant="default" className="cursor-pointer" />
+          </Carousel>
         </div>
-      </div>
-      <div className="mt-4 max-w-full p-8 sm:p-16 lg:p-0">
-        <Carousel className="">
-          <CarouselContent className="ml-0 flex">{content}</CarouselContent>
-          <CarouselPrevious variant="default" className="cursor-pointer" />
-          <CarouselNext variant="default" className="cursor-pointer" />
-        </Carousel>
       </div>
     </section>
   );
