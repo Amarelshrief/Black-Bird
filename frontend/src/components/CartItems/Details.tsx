@@ -11,6 +11,9 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useAppSelector } from "@/hooks/useAppSelector";
+import { cartImg } from "@/assets";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -47,6 +50,18 @@ const formSchema = z.object({
 });
 
 function Details() {
+  const [totalAmt, setTotalAmt] = useState<number>(0);
+  const productData = useAppSelector((state) => state.product.products);
+
+  useEffect(() => {
+    let price: number = 0;
+    productData.map((product) => {
+      price += product.quantity * product.price;
+      return price;
+    });
+    setTotalAmt(price);
+  }, [productData]);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -69,8 +84,15 @@ function Details() {
   }
   return (
     <section>
-      <div className="flex items-center justify-between gap-24 mt-8">
-        <div className="flex gap-4 w-3/4">
+      <div>
+        <img
+          src={cartImg}
+          alt="Cart-Img"
+          className="w-full h-60 object-cover"
+        />
+      </div>
+      <div className="main-container flex items-center justify-between my-8">
+        <div className="flex gap-8 w-full">
           <div className="w-full">
             <h4 className="text-md font-bold text-[var(--primary)]">
               Shipping Address
@@ -238,7 +260,10 @@ function Details() {
                     </Link>
                     <Link to={"/payment"} className="w-full">
                       <div className="w-full cursor-pointer">
-                        <Button className="w-full cursor-pointer h-10 text-md">
+                        <Button
+                          type="submit"
+                          className="w-full cursor-pointer h-10 text-md"
+                        >
                           Proceed to Payment
                         </Button>
                       </div>
@@ -246,6 +271,48 @@ function Details() {
                   </div>
                 </form>
               </Form>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 mt-8 w-2/4">
+            <div className="flex items-center justify-between">
+              <h4 className="text-md font-bold text-[var(--muted)]">
+                Subtotal
+              </h4>
+              <p className="text-lg font-bold">${totalAmt}</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center justify-between">
+                <p className="text-sm text-[var(--muted)]">Shipping:</p>
+                <span>-</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <p className="text-sm text-[var(--muted)]">Tax:</p>
+                <span>-</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <p className="text-sm text-[var(--muted)]">Discount:</p>
+                <span>-</span>
+              </div>
+              <span className="border-b border-[var(--input)] w-full"></span>
+              <div className="mt-4 flex items-start">
+                <p className="text-2xl text-[var(--muted)] font-bold">
+                  ${totalAmt}
+                </p>
+              </div>
+              <div className="flex flex-col gap-4">
+                <Input
+                  placeholder="Voucher"
+                  className="h-14 w-full hover:border-primary duration-100"
+                />
+                <div className="w-full">
+                  <Button
+                    variant={"outline"}
+                    className="w-full cursor-pointer h-10 text-md"
+                  >
+                    Apply Voucher
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
