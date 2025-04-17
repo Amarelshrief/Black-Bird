@@ -10,6 +10,8 @@ import {
   incrementQuantity,
   removeFromCart,
 } from "@/store/productSlice";
+import { Link } from "react-router-dom";
+import { cartImg } from "@/assets";
 
 function CartItems() {
   const [totalAmt, setTotalAmt] = useState<number>(0);
@@ -25,8 +27,15 @@ function CartItems() {
     setTotalAmt(price);
   }, [productData]);
   return (
-    <section className="mt-4">
-      <div className="flex items-start justify-between gap-24">
+    <section>
+      <div>
+        <img
+          src={cartImg}
+          alt="Cart-Img"
+          className="w-full h-60 object-cover"
+        />
+      </div>
+      <div className="main-container flex items-start justify-between gap-24 my-8">
         <div className="flex flex-col gap-4 w-3/4">
           {productData.map((product) => (
             <div className="flex items-center gap-4">
@@ -165,11 +174,13 @@ function CartItems() {
                 Apply Voucher
               </Button>
             </div>
-            <div className="mt-4">
-              <Button className="w-full font-bold text-md text-[var(--input)] duration-200 cursor-pointer">
-                Checkout Now
-              </Button>
-            </div>
+            <Link to={`/checkout`}>
+              <div className="mt-4">
+                <Button className="w-full font-bold text-md text-[var(--input)] duration-200 cursor-pointer">
+                  Checkout Now
+                </Button>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
