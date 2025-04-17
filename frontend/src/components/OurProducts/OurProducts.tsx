@@ -3,8 +3,8 @@ import { Button } from "../ui/button";
 
 function OurProducts() {
   return (
-    <section>
-      <div className="main-container flex items center gap-16 mt-4">
+    <section className="mt-8" id="categories">
+      <div className="main-container flex items center gap-16">
         <div className="flex items-center justify-center gap-8 lg:gap-0 lg:justify-between w-full flex-wrap">
           <div className="flex flex-col gap-1 cursor-pointer hover:scale-110 duration-300 rounded-xl">
             <img
