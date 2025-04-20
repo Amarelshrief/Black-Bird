@@ -67,8 +67,8 @@ function SecondHeader() {
   }, [productData]);
 
   return (
-    <header className="bg-[var(--foreground)] h-14">
-      <div className="main-container flex items-center justify-between p-2 lg:p-0">
+    <header className="bg-[var(--foreground)] h-14 fixed top-0 left-0 right-0 z-50">
+      <div className="main-container flex items-center justify-between p-2 lg:p-0 ">
         <Link to={"/"}>
           <div className="flex items-center justify-between gap-1 cursor-pointer text-[var(--primary)]">
             <Bird />
@@ -76,23 +76,264 @@ function SecondHeader() {
           </div>
         </Link>
         <div>
-          <div className="">
+          <div className="flex lg:hidden relative">
             <Drawer>
-              <DrawerTrigger>
+              <DrawerTrigger className="cursor-pointer">
                 <div>
                   <img src={menuIcon} alt="" />
+                </div>
+                <div className="absolute top-3 left-4 w-full h-full flex flex-col items-start justify-center gap-2">
+                  <span className="bg-[var(--primary)] w-6 h-6 rounded-full">
+                    6
+                  </span>
                 </div>
               </DrawerTrigger>
               <DrawerContent>
                 <DrawerHeader>
-                  <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+                  <DrawerTitle>Navigation Mneu</DrawerTitle>
+                  <NavigationMenu>
+                    <NavigationMenuList>
+                      <NavigationMenuItem>
+                        <NavigationMenuTrigger className="cursor-pointer">
+                          Home
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent className="">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm">
+                            <NavigationMenuLink
+                              onClick={() => {
+                                const element =
+                                  document.getElementById("advantages");
+                                element?.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }}
+                              className="hover:bg-transparent"
+                            >
+                              Advantages
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink
+                              onClick={() => {
+                                const element =
+                                  document.getElementById("categories");
+                                element?.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }}
+                              className="hover:bg-transparent"
+                            >
+                              Categories
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink
+                              onClick={() => {
+                                const element =
+                                  document.getElementById("products");
+                                element?.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }}
+                              className="hover:bg-transparent"
+                            >
+                              Products
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink
+                              onClick={() => {
+                                const element =
+                                  document.getElementById("announce");
+                                element?.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }}
+                              className="hover:bg-transparent"
+                            >
+                              Announce
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink
+                              onClick={() => {
+                                const element =
+                                  document.getElementById("electronic");
+                                element?.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }}
+                              className="hover:bg-transparent"
+                            >
+                              Electronic Products
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink
+                              onClick={() => {
+                                const element =
+                                  document.getElementById("market");
+                                element?.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }}
+                              className="hover:bg-transparent"
+                            >
+                              Market
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink
+                              onClick={() => {
+                                const element = document.getElementById("men");
+                                element?.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }}
+                              className="hover:bg-transparent"
+                            >
+                              Men Products
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink
+                              onClick={() => {
+                                const element =
+                                  document.getElementById("women");
+                                element?.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }}
+                              className="hover:bg-transparent"
+                            >
+                              Women Products
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink
+                              onClick={() => {
+                                const element =
+                                  document.getElementById("brands");
+                                element?.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }}
+                              className="hover:bg-transparent"
+                            >
+                              Featured Brands
+                            </NavigationMenuLink>
+                          </div>
+                        </NavigationMenuContent>
+                      </NavigationMenuItem>
+                    </NavigationMenuList>
+                  </NavigationMenu>
+                  <NavigationMenu>
+                    <NavigationMenuList>
+                      <NavigationMenuItem>
+                        <NavigationMenuTrigger className="cursor-pointer">
+                          Pages
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink className="hover:bg-transparent">
+                              <Link to={"/"}>Home</Link>
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink className="hover:bg-transparent">
+                              <Link to={"/products"}>Products</Link>
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink className="hover:bg-transparent">
+                              <Link to={"/cart"}>Cart</Link>
+                            </NavigationMenuLink>
+                          </div>
+                        </NavigationMenuContent>
+                      </NavigationMenuItem>
+                    </NavigationMenuList>
+                  </NavigationMenu>
+                  <NavigationMenu>
+                    <NavigationMenuList>
+                      <NavigationMenuItem>
+                        <NavigationMenuTrigger className="cursor-pointer">
+                          Full Screen Menu
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink className="hover:bg-transparent">
+                              Link
+                            </NavigationMenuLink>
+                          </div>
+                        </NavigationMenuContent>
+                      </NavigationMenuItem>
+                    </NavigationMenuList>
+                  </NavigationMenu>
+                  <NavigationMenu>
+                    <NavigationMenuList>
+                      <NavigationMenuItem>
+                        <NavigationMenuTrigger className="cursor-pointer">
+                          Pages
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink className="hover:bg-transparent">
+                              Link
+                            </NavigationMenuLink>
+                          </div>
+                        </NavigationMenuContent>
+                      </NavigationMenuItem>
+                    </NavigationMenuList>
+                  </NavigationMenu>
+                  <NavigationMenu>
+                    <NavigationMenuList>
+                      <NavigationMenuItem>
+                        <NavigationMenuTrigger className="cursor-pointer">
+                          User Account
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink className="hover:bg-transparent">
+                              Market
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink className="hover:bg-transparent">
+                              Gadget
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink className="hover:bg-transparent">
+                              Fashion
+                            </NavigationMenuLink>
+                          </div>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink className="hover:bg-transparent">
+                              Electronics
+                            </NavigationMenuLink>
+                          </div>
+                        </NavigationMenuContent>
+                      </NavigationMenuItem>
+                    </NavigationMenuList>
+                  </NavigationMenu>
+                  <NavigationMenu>
+                    <NavigationMenuList>
+                      <NavigationMenuItem>
+                        <NavigationMenuTrigger className="cursor-pointer">
+                          Vendor Account
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                            <NavigationMenuLink className="hover:bg-transparent">
+                              Link
+                            </NavigationMenuLink>
+                          </div>
+                        </NavigationMenuContent>
+                      </NavigationMenuItem>
+                    </NavigationMenuList>
+                  </NavigationMenu>
                 </DrawerHeader>
-                <DrawerFooter>
-                  <Button>Submit</Button>
-                  <DrawerClose>
-                    <Button variant="outline">Cancel</Button>
-                  </DrawerClose>
-                </DrawerFooter>
+                <DrawerFooter></DrawerFooter>
               </DrawerContent>
             </Drawer>
           </div>
@@ -389,21 +630,106 @@ function SecondHeader() {
                       <p className="flex lg:hidden">Cart</p>
                     </li>
                   </DrawerTrigger>
-                  <DrawerContent className="">
+                  <DrawerContent className="overflow-y-scroll overflow-x-hidden">
                     <DrawerHeader>
-                      <DrawerTitle>
-                        <ShoppingCart className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
+                      <DrawerTitle className="flex items-center justify-between gap-2">
+                        <div className="flex items-center gap-2">
+                          <ShoppingCart className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
+                          <span className="text-[var(--secondary)] font-bold">
+                            {productData.length} items
+                          </span>
+                        </div>
+                        <div>
+                          <OctagonX
+                            onClick={() => dispatch(resetCart())}
+                            className="cursor-pointer text-[var(--secondary)] hover:text-[var(--primary)] duration-150"
+                          />
+                        </div>
                       </DrawerTitle>
                     </DrawerHeader>
-                    <DrawerFooter className="">
-                      <Button className="h-[2.7rem] cursor-pointer">
-                        Checkout
-                      </Button>
+                    {productData.map((product) => (
+                      <div className="flex items-center justify-between gap-3 p-4">
+                        <div>
+                          <img
+                            src={`${import.meta.env.VITE_BASE_URL}${
+                              product.image.url
+                            }`}
+                            alt={product.title}
+                            className="w-26 h-28"
+                          />
+                        </div>
+                        <div className="flex flex-col gap-3">
+                          <p className="font-bold text-lg text-[var(--primary)] tracking-wide">
+                            {product.title}
+                          </p>
+
+                          <p className="text-sm text-[var(--secondary)]">
+                            <span>{product.quantity}</span> *{" "}
+                            <span>{product.price}</span> = ${" "}
+                            <span>{product.quantity * product.price}</span>
+                          </p>
+                          <div className="flex items-center gap-2">
+                            <Button
+                              onClick={() =>
+                                dispatch(
+                                  incrementQuantity({
+                                    id: product.id,
+                                    quantity: product.quantity,
+                                    title: product.title,
+                                    price: product.price,
+                                    description: product.description,
+                                    rate: product.rate,
+                                    category: product.category,
+                                    image: product.image,
+                                  })
+                                )
+                              }
+                              variant="outline"
+                              className="cursor-pointer text-[var(--secondary)] hover:bg-[var(--secondary)]/20 duration-200"
+                            >
+                              +
+                            </Button>
+                            <span>{product.quantity}</span>
+                            <Button
+                              onClick={() =>
+                                dispatch(
+                                  decrementQuantity({
+                                    id: product.id,
+                                    quantity: product.quantity,
+                                    title: product.title,
+                                    price: product.price,
+                                    description: product.description,
+                                    rate: product.rate,
+                                    category: product.category,
+                                    image: product.image,
+                                  })
+                                )
+                              }
+                              variant="outline"
+                              className="cursor-pointer text-[var(--secondary)] hover:bg-[var(--secondary)]/20 duration-200"
+                            >
+                              -
+                            </Button>
+                          </div>
+                        </div>
+                        <div className="cursor-pointer text-[var(--secondary)] hover:text-[var(--primary)] duration-150">
+                          <OctagonX
+                            onClick={() => dispatch(removeFromCart(product.id))}
+                          />
+                        </div>
+                      </div>
+                    ))}
+                    <DrawerFooter>
+                      <Link to={"/checkout"}>
+                        <Button className="w-full h-[2.7rem] cursor-pointer text-md font-bold duration-200">
+                          Checkout Now ($ {totalAmt})
+                        </Button>
+                      </Link>
                       <DrawerClose>
-                        <Link to={"/products"}>
+                        <Link to={"/cart"}>
                           <Button
                             variant={"outline"}
-                            className="w-full h-[2.7rem] cursor-pointer"
+                            className="w-full h-[2.7rem] text-md cursor-pointer text-[var(--secondary)] hover:bg-[var(--secondary)]/20 duration-200"
                           >
                             View Cart
                           </Button>
@@ -415,7 +741,7 @@ function SecondHeader() {
               </ul>
             </div>
           ) : (
-            <ul className="lg:flex items-center gap-4 hidden">
+            <ul className="hidden lg:flex items-center gap-4">
               <li className="text-[var(--primary)] cursor-pointer hover:text-[var(--secondary)] flex items-center justify-center duration-150">
                 <DropdownMenu>
                   <DropdownMenuTrigger
@@ -529,9 +855,11 @@ function SecondHeader() {
                     </div>
                   ))}
                   <DrawerFooter>
-                    <Button className="h-[2.7rem] cursor-pointer text-md font-bold duration-200">
-                      Checkout Now ($ {totalAmt})
-                    </Button>
+                    <Link to={"/checkout"}>
+                      <Button className="w-full h-[2.7rem] cursor-pointer text-md font-bold duration-200">
+                        Checkout Now ($ {totalAmt})
+                      </Button>
+                    </Link>
                     <DrawerClose>
                       <Link to={"/cart"}>
                         <Button
