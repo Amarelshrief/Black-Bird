@@ -92,7 +92,7 @@ function Details() {
         />
       </div>
       <div className="main-container flex items-center justify-between my-8">
-        <div className="flex gap-8 w-full">
+        <div className="flex flex-col lg:flex-row gap-8 w-full">
           <div className="w-full">
             <h4 className="text-md font-bold text-[var(--primary)]">
               Shipping Address
@@ -103,7 +103,7 @@ function Details() {
                   onSubmit={form.handleSubmit(onSubmit)}
                   className="space-y-8"
                 >
-                  <div className="flex items-center justify-between gap-4">
+                  <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
                     <FormField
                       control={form.control}
                       name="username"
@@ -139,7 +139,7 @@ function Details() {
                       )}
                     />
                   </div>
-                  <div className="flex items-center justify-between gap-4">
+                  <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
                     <FormField
                       control={form.control}
                       name="email"
@@ -175,7 +175,7 @@ function Details() {
                       )}
                     />
                   </div>
-                  <div className="flex items-center justify-between gap-4">
+                  <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
                     <FormField
                       control={form.control}
                       name="address_1"
@@ -211,7 +211,7 @@ function Details() {
                       )}
                     />
                   </div>
-                  <div className="flex items-center justify-between gap-4">
+                  <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
                     <FormField
                       control={form.control}
                       name="country"
@@ -247,7 +247,7 @@ function Details() {
                       )}
                     />
                   </div>
-                  <div className="flex items-center justify-between gap-4">
+                  <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
                     <Link to={"/cart"} className="w-full">
                       <div className="w-full cursor-pointer">
                         <Button
@@ -273,7 +273,7 @@ function Details() {
               </Form>
             </div>
           </div>
-          <div className="flex flex-col gap-4 mt-8 w-2/4">
+          <div className="flex flex-col gap-4 mt-8 w-full lg:w-2/4">
             <div className="flex items-center justify-between">
               <h4 className="text-md font-bold text-[var(--muted)]">
                 Subtotal
