@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer>
-      <div className="bg-[var(--foreground)] pb-8 pt-4">
-        <div className="main-container grid grid-cols-4 gap-18 p-2">
+    <footer className="bg-[var(--foreground)] ">
+      <div className="pb-8 mt-auto pt-4">
+        <div className="main-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-18 p-2">
           <div>
             <div className="flex items-center gap-1 pb-2 text-[var(--primary)]">
               <Bird />
