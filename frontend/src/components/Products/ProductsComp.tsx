@@ -58,7 +58,7 @@ function ProductsComp() {
             All our new arrivals in a exclusive brand selection
           </p>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col md:flex-row items-center gap-4">
           <div>
             <Button className="h-10 text-lg text-[var(--input)] bg-[var(--primary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer">
               All Categories
