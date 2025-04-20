@@ -35,8 +35,8 @@ function CartItems() {
           className="w-full h-60 object-cover"
         />
       </div>
-      <div className="main-container flex items-start justify-between gap-24 my-8">
-        <div className="flex flex-col gap-4 w-3/4">
+      <div className="main-container flex items-start justify-between gap-24 my-8 flex-wrap lg:flex-nowrap">
+        <div className="flex flex-col gap-4 w-full lg:w-3/4">
           {productData.map((product) => (
             <div className="flex items-center gap-4">
               <div>
@@ -48,7 +48,7 @@ function CartItems() {
               </div>
               <div className="flex flex-col gap-2 w-full">
                 <div className="flex items-center justify-between w-full">
-                  <p className="text-xl font-bold tracking-wide text-[var(--primary)]">
+                  <p className="text-lg md:text-xl font-bold tracking-wide text-[var(--primary)]">
                     {product.title}
                   </p>
                   <OctagonX
@@ -113,7 +113,7 @@ function CartItems() {
             </div>
           ))}
         </div>
-        <div className="flex flex-col gap-4 w-1/4">
+        <div className="flex flex-col gap-4 w-full lg:w-1/4">
           <div className="flex items-center justify-between">
             <p className="text-[var(--muted)] text-lg">Total Amount:</p>
             <p className="text-lg font-bold text-[var(--primary)]">
