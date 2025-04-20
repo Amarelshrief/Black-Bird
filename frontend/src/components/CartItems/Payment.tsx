@@ -108,7 +108,7 @@ function Payment() {
         />
       </div>
       <div className="main-container flex items-center justify-between gap-24 my-8">
-        <div className="flex gap-8 w-full">
+        <div className="flex flex-col lg:flex-row gap-8 w-full">
           <RadioGroup className="w-full" defaultValue="comfortable">
             <div className="flex flex-col gap-4">
               <div className="flex items-center space-x-2">
@@ -129,9 +129,9 @@ function Payment() {
                 <Form {...form}>
                   <form
                     onSubmit={form.handleSubmit(onSubmit)}
-                    className="space-y-8"
+                    className="space-y-4 lg:space-y-8"
                   >
-                    <div className="flex items-center justify-between gap-4">
+                    <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
                       <FormField
                         control={form.control}
                         name="card_number"
@@ -167,7 +167,7 @@ function Payment() {
                         )}
                       />
                     </div>
-                    <div className="flex items-center justify-between gap-4">
+                    <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
                       <FormField
                         control={form.control}
                         name="name_on_card"
@@ -275,7 +275,7 @@ function Payment() {
               </Label>
             </div>
           </RadioGroup>
-          <div className="flex flex-col gap-4 w-2/4">
+          <div className="flex flex-col gap-4 w-full lg:w-2/4">
             <div className="flex items-center justify-between">
               <h4 className="text-md font-bold text-[var(--muted)]">
                 Subtotal
