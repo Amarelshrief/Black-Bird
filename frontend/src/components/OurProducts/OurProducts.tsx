@@ -5,7 +5,7 @@ function OurProducts() {
   return (
     <section className="mt-8" id="categories">
       <div className="main-container flex items center gap-16">
-        <div className="flex items-center justify-center gap-8 lg:gap-0 lg:justify-between w-full flex-wrap">
+        <div className="flex items-center justify-center gap-8 lg:gap-0 lg:justify-between w-full flex-wrap text-[var(--primary)]">
           <div className="flex flex-col gap-1 cursor-pointer hover:scale-110 duration-300 rounded-xl">
             <img
               src={toys}
@@ -14,7 +14,7 @@ function OurProducts() {
             />
             <Button
               variant="ghost"
-              className="flex items-center justify-center text-lg font-bold hover:bg-[var(--primary)] hover:text-[var(--input)] duration-300 rounded-xl cursor-pointer"
+              className="flex items-center justify-center text-lg font-bold hover:bg-[var(--primary)] hover:text-input dark:hover:text-card-foreground duration-300 rounded-xl cursor-pointer"
             >
               Toys
             </Button>
@@ -27,7 +27,7 @@ function OurProducts() {
             />
             <Button
               variant="ghost"
-              className="flex items-center justify-center text-lg font-bold hover:bg-[var(--primary)] hover:text-[var(--input)] duration-300 rounded-xl cursor-pointer"
+              className="flex items-center justify-center text-lg font-bold hover:bg-[var(--primary)] hover:text-input dark:hover:text-card-foreground duration-300 rounded-xl cursor-pointer"
             >
               Sports
             </Button>
@@ -40,7 +40,7 @@ function OurProducts() {
             />
             <Button
               variant="ghost"
-              className="flex items-center justify-center text-lg font-bold hover:bg-[var(--primary)] hover:text-[var(--input)] duration-300 rounded-xl cursor-pointer"
+              className="flex items-center justify-center text-lg font-bold hover:bg-[var(--primary)] hover:text-input dark:hover:text-card-foreground duration-300 rounded-xl cursor-pointer"
             >
               Gaming
             </Button>
@@ -53,7 +53,7 @@ function OurProducts() {
             />
             <Button
               variant="ghost"
-              className="flex items-center justify-center text-lg font-bold hover:bg-[var(--primary)] hover:text-[var(--input)] duration-300 rounded-xl cursor-pointer"
+              className="flex items-center justify-center text-lg font-bold hover:bg-[var(--primary)] hover:text-input dark:hover:text-card-foreground duration-300 rounded-xl cursor-pointer"
             >
               Furniture
             </Button>
@@ -66,7 +66,7 @@ function OurProducts() {
             />
             <Button
               variant="ghost"
-              className="flex items-center justify-center text-lg font-bold hover:bg-[var(--primary)] hover:text-[var(--input)] duration-300 rounded-xl cursor-pointer"
+              className="flex items-center justify-center text-lg font-bold hover:bg-[var(--primary)] hover:text-input dark:hover:text-card-foreground duration-300 rounded-xl cursor-pointer"
             >
               Fashion
             </Button>
@@ -79,7 +79,7 @@ function OurProducts() {
             />
             <Button
               variant="ghost"
-              className="flex items-center justify-center text-lg font-bold hover:bg-[var(--primary)] hover:text-[var(--input)] duration-300 rounded-xl cursor-pointer"
+              className="flex items-center justify-center text-lg font-bold hover:bg-[var(--primary)] hover:text-input dark:hover:text-card-foreground duration-300 rounded-xl cursor-pointer"
             >
               Cameras
             </Button>
