@@ -113,7 +113,7 @@ function Details() {
                             <Input
                               placeholder="Full Name"
                               {...field}
-                              className="h-14 w-full hover:border-primary duration-100"
+                              className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                             />
                           </FormControl>
 
@@ -130,7 +130,7 @@ function Details() {
                             <Input
                               placeholder="Contact Number"
                               {...field}
-                              className="h-14 w-full hover:border-primary duration-100"
+                              className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                             />
                           </FormControl>
 
@@ -149,7 +149,7 @@ function Details() {
                             <Input
                               placeholder="Email"
                               {...field}
-                              className="h-14 w-full hover:border-primary duration-100"
+                              className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                             />
                           </FormControl>
 
@@ -166,7 +166,7 @@ function Details() {
                             <Input
                               placeholder="Company Name"
                               {...field}
-                              className="h-14 w-full hover:border-primary duration-100"
+                              className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                             />
                           </FormControl>
 
@@ -185,7 +185,7 @@ function Details() {
                             <Input
                               placeholder="Address 1"
                               {...field}
-                              className="h-14 w-full hover:border-primary duration-100"
+                              className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                             />
                           </FormControl>
 
@@ -202,7 +202,7 @@ function Details() {
                             <Input
                               placeholder="Address 2"
                               {...field}
-                              className="h-14 w-full hover:border-primary duration-100"
+                              className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                             />
                           </FormControl>
 
@@ -221,7 +221,7 @@ function Details() {
                             <Input
                               placeholder="Country"
                               {...field}
-                              className="h-14 w-full hover:border-primary duration-100"
+                              className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                             />
                           </FormControl>
 
@@ -238,7 +238,7 @@ function Details() {
                             <Input
                               placeholder="Zip Code"
                               {...field}
-                              className="h-14 w-full hover:border-primary duration-100"
+                              className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                             />
                           </FormControl>
 
@@ -252,7 +252,7 @@ function Details() {
                       <div className="w-full cursor-pointer">
                         <Button
                           variant={"outline"}
-                          className="w-full cursor-pointer h-10 text-md"
+                          className="w-full cursor-pointer h-10 text-md text-secondary hover:text-primary hover:bg-input duration-200"
                         >
                           Back To Cart
                         </Button>
@@ -262,7 +262,7 @@ function Details() {
                       <div className="w-full cursor-pointer">
                         <Button
                           type="submit"
-                          className="w-full cursor-pointer h-10 text-md"
+                          className="w-full cursor-pointer h-10 text-md text-input dark:text-card-foreground"
                         >
                           Proceed to Payment
                         </Button>
@@ -275,39 +275,42 @@ function Details() {
           </div>
           <div className="flex flex-col gap-4 mt-8 w-full lg:w-2/4">
             <div className="flex items-center justify-between">
-              <h4 className="text-md font-bold text-[var(--muted)]">
+              <h4 className="text-md font-bold text-[var(--primary)]">
                 Subtotal
               </h4>
-              <p className="text-lg font-bold">${totalAmt}</p>
+              <p className="text-lg font-bold text-primary">${totalAmt}</p>
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-between">
-                <p className="text-sm text-[var(--muted)]">Shipping:</p>
-                <span>-</span>
+                <p className="text-sm text-[var(--card-foreground)]">
+                  Shipping:
+                </p>
+                <span className="text-card-foreground">-</span>
               </div>
               <div className="flex items-center justify-between">
-                <p className="text-sm text-[var(--muted)]">Tax:</p>
-                <span>-</span>
+                <p className="text-sm text-[var(--card-foreground)]">Tax:</p>
+                <span className="text-card-foreground">-</span>
               </div>
               <div className="flex items-center justify-between">
-                <p className="text-sm text-[var(--muted)]">Discount:</p>
-                <span>-</span>
+                <p className="text-sm text-[var(--card-foreground)]">
+                  Discount:
+                </p>
+                <span className="text-card-foreground">-</span>
               </div>
               <span className="border-b border-[var(--input)] w-full"></span>
               <div className="mt-4 flex items-start">
-                <p className="text-2xl text-[var(--muted)] font-bold">
-                  ${totalAmt}
-                </p>
+                <p className="text-2xl text-primary font-bold">${totalAmt}</p>
               </div>
+
               <div className="flex flex-col gap-4">
                 <Input
                   placeholder="Voucher"
-                  className="h-14 w-full hover:border-primary duration-100"
+                  className="h-14 w-full hover:border-primary duration-100 text-card-foreground"
                 />
                 <div className="w-full">
                   <Button
                     variant={"outline"}
-                    className="w-full cursor-pointer h-10 text-md"
+                    className="w-full cursor-pointer h-10 text-md text-secondary hover:text-primary hover:bg-input duration-200"
                   >
                     Apply Voucher
                   </Button>
