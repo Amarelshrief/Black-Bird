@@ -12,79 +12,81 @@ import { Rating } from "react-simple-star-rating";
 
 function WomenFashion() {
   return (
-    <section className="mt-8" id="women">
+    <section className="mt-8" id="electronic">
       <div className="main-container">
         <div className="flex flex-col xl:flex-row items-center justify-between">
           <div className="flex flex-col w-full">
-            <h2 className="mb-4 text-2xl font-bold">Women's Fashion</h2>
-            <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
+            <h2 className="mb-4 text-2xl font-bold text-primary">
+              Electronic Products
+            </h2>
+            <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
               <Button
                 variant="ghost"
-                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
+                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary "
               >
                 Wireless Speaker
               </Button>
             </div>
-            <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
+            <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
               <Button
                 variant="ghost"
-                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
+                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
                 Tablet
               </Button>
             </div>
-            <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
+            <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
               <Button
                 variant="ghost"
-                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
+                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
                 Smartphone
               </Button>
             </div>
-            <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
+            <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
               <Button
                 variant="ghost"
-                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
+                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
                 Laptop
               </Button>
             </div>
-            <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
+            <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
               <Button
                 variant="ghost"
-                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
+                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
                 iMac
               </Button>
             </div>
-            <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
+            <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
               <Button
                 variant="ghost"
-                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
+                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
                 Game Controller
               </Button>
             </div>
-            <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
+            <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
               <Button
                 variant="ghost"
-                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
+                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
                 Drone
               </Button>
             </div>
-            <div className="flex items-center gap-2 hover:translate-x-2 hover:text-[var(--secondary)] duration-300">
+            <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
               <Button
                 variant="ghost"
-                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
+                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
                 Apple
               </Button>
             </div>
-            <div className="-ml-3 flex items-center gap-2 hover:underline hover:translate-x-2 hover:text-[var(--secondary)] duration-300 mt-4">
+            <div className="-ml-3 flex items-center gap-2 hover:underline hover:translate-x-2 text-secondary hover:text-primary duration-300 mt-4">
               <Button
                 variant="ghost"
-                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-[var(--secondary)]"
+                className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
                 Browse All
                 <ChevronRight className="cursor-pointer" size={18} />
