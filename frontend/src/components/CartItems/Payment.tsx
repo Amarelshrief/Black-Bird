@@ -23,13 +23,12 @@ const formSchema = z.object({
   exp_date: z.string().min(2, {
     message: "Company Name must be at least 2 characters.",
   }),
-  name_on_card: z
-    .string()
-    .regex(/01[0-2]\d{1,8}$/, {
-      message:
-        "Invalid phone number format. Please provide a valid phone number with the +20 country code.",
-    })
-    .trim(),
+  name_on_card_1: z.string().min(2, {
+    message: "Name on Card must be at least 2 characters.",
+  }),
+  name_on_card_2: z.string().min(2, {
+    message: "Name on Card must be at least 2 characters.",
+  }),
 });
 
 const paypalSchema = z.object({
@@ -51,7 +50,8 @@ function Payment() {
     defaultValues: {
       card_number: "",
       exp_date: "",
-      name_on_card: "",
+      name_on_card_1: "",
+      name_on_card_2: "",
     },
   });
 
@@ -117,7 +117,7 @@ function Payment() {
                   value="comfortable"
                   id="r1"
                 />
-                <Label className="text-md" htmlFor="r1">
+                <Label className="text-md text-card-foreground" htmlFor="r1">
                   Pay with credit card
                 </Label>
               </div>
@@ -141,7 +141,7 @@ function Payment() {
                               <Input
                                 placeholder="Card Number"
                                 {...field}
-                                className="h-14 w-full hover:border-primary duration-100"
+                                className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                               />
                             </FormControl>
 
@@ -158,7 +158,7 @@ function Payment() {
                               <Input
                                 placeholder="Exp Date"
                                 {...field}
-                                className="h-14 w-full hover:border-primary duration-100"
+                                className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                               />
                             </FormControl>
 
@@ -170,14 +170,14 @@ function Payment() {
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
                       <FormField
                         control={form.control}
-                        name="name_on_card"
+                        name="name_on_card_1"
                         render={({ field }) => (
                           <FormItem className="w-full">
                             <FormControl>
                               <Input
                                 placeholder="Name on Card"
                                 {...field}
-                                className="h-14 w-full hover:border-primary duration-100"
+                                className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                               />
                             </FormControl>
 
@@ -187,14 +187,14 @@ function Payment() {
                       />
                       <FormField
                         control={form.control}
-                        name="name_on_card"
+                        name="name_on_card_2"
                         render={({ field }) => (
                           <FormItem className="w-full">
                             <FormControl>
                               <Input
                                 placeholder="Name on Card"
                                 {...field}
-                                className="h-14 w-full hover:border-primary duration-100"
+                                className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                               />
                             </FormControl>
 
@@ -207,7 +207,7 @@ function Payment() {
                     <div className="w-1/4 cursor-pointer">
                       <Button
                         type="submit"
-                        className="w-full cursor-pointer h-10 text-md"
+                        className="w-full cursor-pointer h-10 text-md text-input dark:text-card-foreground"
                       >
                         Submit
                       </Button>
@@ -223,7 +223,7 @@ function Payment() {
                   value="default"
                   id="r2"
                 />
-                <Label className="text-md" htmlFor="r2">
+                <Label className="text-md text-card-foreground" htmlFor="r2">
                   Pay with Paypal
                 </Label>
               </div>
@@ -246,7 +246,7 @@ function Payment() {
                             <Input
                               placeholder="Paybap Email"
                               {...field}
-                              className="h-14 w-full hover:border-primary duration-100"
+                              className="h-14 w-full text-card-foreground hover:border-primary duration-100"
                             />
                           </FormControl>
 
@@ -255,7 +255,7 @@ function Payment() {
                       )}
                     />
                     <Button
-                      className="w-1/4 cursor-pointer h-10 text-md"
+                      className="w-1/4 cursor-pointer h-10 text-md text-input dark:text-card-foreground"
                       type="submit"
                     >
                       Submit
@@ -270,34 +270,32 @@ function Payment() {
                 value="compact"
                 id="r3"
               />
-              <Label className="text-md" htmlFor="r3">
+              <Label className="text-md text-card-foreground" htmlFor="r3">
                 Cash On Delivery
               </Label>
             </div>
           </RadioGroup>
           <div className="flex flex-col gap-4 w-full lg:w-2/4">
             <div className="flex items-center justify-between">
-              <h4 className="text-md font-bold text-[var(--muted)]">
-                Subtotal
-              </h4>
-              <p className="text-lg font-bold">${totalAmt}</p>
+              <h4 className="text-md font-bold text-primary">Subtotal</h4>
+              <p className="text-lg font-bold text-primary">${totalAmt}</p>
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-between">
-                <p className="text-sm text-[var(--muted)]">Shipping:</p>
-                <span>-</span>
+                <p className="text-sm text-card-foreground">Shipping:</p>
+                <span className="text-card-foreground">-</span>
               </div>
               <div className="flex items-center justify-between">
-                <p className="text-sm text-[var(--muted)]">Tax:</p>
-                <span>$40</span>
+                <p className="text-sm text-card-foreground">Tax:</p>
+                <span className="text-card-foreground">$40</span>
               </div>
               <div className="flex items-center justify-between">
-                <p className="text-sm text-[var(--muted)]">Discount:</p>
-                <span>$20</span>
+                <p className="text-sm text-card-foreground">Discount:</p>
+                <span className="text-card-foreground">$20</span>
               </div>
               <span className="border-b border-[var(--input)] w-full"></span>
               <div className="mt-4 flex items-center justify-end">
-                <p className="text-2xl text-[var(--muted)] font-bold">
+                <p className="text-2xl text-[var(--primary)] font-bold">
                   ${totalAmt + 40 - 20}
                 </p>
               </div>
