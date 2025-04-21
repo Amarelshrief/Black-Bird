@@ -15,7 +15,7 @@ function LongBanner() {
                 Only until the end of this week. Terms and conditions apply
               </p>
               <div className="">
-                <Button className="h-12 w-[9rem] text-lg text-[var(--input)] bg-[var(--primary)] hover:bg-[var(--primary)]/80 duration-300 cursor-pointer">
+                <Button className="h-12 w-[9rem] text-lg text-input dark:text-card-foreground bg-[var(--primary)] hover:bg-[var(--primary)]/80 duration-300 cursor-pointer">
                   Discover Now
                 </Button>
               </div>
