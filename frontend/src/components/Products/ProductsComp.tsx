@@ -60,17 +60,17 @@ function ProductsComp() {
         </div>
         <div className="flex flex-col md:flex-row items-center gap-4">
           <div>
-            <Button className="h-10 text-lg text-[var(--input)] bg-[var(--primary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer">
+            <Button className="h-10 text-lg text-input dark:text-card-foreground bg-primary hover:bg-[var(--primary)]/80 duration-200 cursor-pointer">
               All Categories
             </Button>
           </div>
           <div>
-            <Button className="h-10 text-lg text-[var(--input)] bg-[var(--primary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer">
+            <Button className="h-10 text-lg text-input dark:text-card-foreground bg-primary hover:bg-[var(--primary)]/80 duration-200 cursor-pointer">
               Men Category
             </Button>
           </div>
           <div>
-            <Button className="h-10 text-lg text-[var(--input)] bg-[var(--primary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer">
+            <Button className="h-10 text-lg text-input dark:text-card-foreground bg-primary hover:bg-[var(--primary)]/80 duration-200 cursor-pointer">
               Women Category
             </Button>
           </div>
