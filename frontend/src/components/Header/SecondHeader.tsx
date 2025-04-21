@@ -90,15 +90,17 @@ function SecondHeader() {
               </DrawerTrigger>
               <DrawerContent>
                 <DrawerHeader>
-                  <DrawerTitle>Navigation Mneu</DrawerTitle>
+                  <DrawerTitle className="dark:text-primary">
+                    Navigation Mneu
+                  </DrawerTitle>
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem>
-                        <NavigationMenuTrigger className="cursor-pointer">
+                        <NavigationMenuTrigger className="cursor-pointer dark:text-primary">
                           Home
                         </NavigationMenuTrigger>
-                        <NavigationMenuContent className="">
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm">
+                        <NavigationMenuContent className="dark:text-primary">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                             <NavigationMenuLink
                               onClick={() => {
                                 const element =
@@ -107,12 +109,12 @@ function SecondHeader() {
                                   behavior: "smooth",
                                 });
                               }}
-                              className="hover:bg-transparent"
+                              className="hover:bg-transparent dark:hover:text-secondary"
                             >
                               Advantages
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                             <NavigationMenuLink
                               onClick={() => {
                                 const element =
@@ -121,12 +123,12 @@ function SecondHeader() {
                                   behavior: "smooth",
                                 });
                               }}
-                              className="hover:bg-transparent"
+                              className="hover:bg-transparent dark:hover:text-secondary"
                             >
                               Categories
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                             <NavigationMenuLink
                               onClick={() => {
                                 const element =
@@ -135,12 +137,12 @@ function SecondHeader() {
                                   behavior: "smooth",
                                 });
                               }}
-                              className="hover:bg-transparent"
+                              className="hover:bg-transparent dark:hover:text-secondary"
                             >
                               Products
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                             <NavigationMenuLink
                               onClick={() => {
                                 const element =
@@ -149,12 +151,12 @@ function SecondHeader() {
                                   behavior: "smooth",
                                 });
                               }}
-                              className="hover:bg-transparent"
+                              className="hover:bg-transparent dark:hover:text-secondary"
                             >
                               Announce
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                             <NavigationMenuLink
                               onClick={() => {
                                 const element =
@@ -163,12 +165,12 @@ function SecondHeader() {
                                   behavior: "smooth",
                                 });
                               }}
-                              className="hover:bg-transparent"
+                              className="hover:bg-transparent dark:hover:text-secondary"
                             >
                               Electronic Products
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                             <NavigationMenuLink
                               onClick={() => {
                                 const element =
@@ -177,12 +179,12 @@ function SecondHeader() {
                                   behavior: "smooth",
                                 });
                               }}
-                              className="hover:bg-transparent"
+                              className="hover:bg-transparent dark:hover:text-secondary"
                             >
                               Market
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                             <NavigationMenuLink
                               onClick={() => {
                                 const element = document.getElementById("men");
@@ -190,12 +192,12 @@ function SecondHeader() {
                                   behavior: "smooth",
                                 });
                               }}
-                              className="hover:bg-transparent"
+                              className="hover:bg-transparent dark:hover:text-secondary"
                             >
                               Men Products
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                             <NavigationMenuLink
                               onClick={() => {
                                 const element =
@@ -204,12 +206,12 @@ function SecondHeader() {
                                   behavior: "smooth",
                                 });
                               }}
-                              className="hover:bg-transparent"
+                              className="hover:bg-transparent dark:hover:text-secondary"
                             >
                               Women Products
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                             <NavigationMenuLink
                               onClick={() => {
                                 const element =
@@ -218,7 +220,7 @@ function SecondHeader() {
                                   behavior: "smooth",
                                 });
                               }}
-                              className="hover:bg-transparent"
+                              className="hover:bg-transparent dark:hover:text-secondary"
                             >
                               Featured Brands
                             </NavigationMenuLink>
@@ -230,22 +232,22 @@ function SecondHeader() {
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem>
-                        <NavigationMenuTrigger className="cursor-pointer">
+                        <NavigationMenuTrigger className="cursor-pointer dark:text-primary">
                           Pages
                         </NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                            <NavigationMenuLink className="hover:bg-transparent">
+                        <NavigationMenuContent className="dark:text-primary">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                            <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                               <Link to={"/"}>Home</Link>
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                            <NavigationMenuLink className="hover:bg-transparent">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                            <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                               <Link to={"/products"}>Products</Link>
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                            <NavigationMenuLink className="hover:bg-transparent">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                            <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                               <Link to={"/cart"}>Cart</Link>
                             </NavigationMenuLink>
                           </div>
@@ -256,12 +258,12 @@ function SecondHeader() {
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem>
-                        <NavigationMenuTrigger className="cursor-pointer">
+                        <NavigationMenuTrigger className="cursor-pointer dark:text-primary">
                           Full Screen Menu
                         </NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                            <NavigationMenuLink className="hover:bg-transparent">
+                        <NavigationMenuContent className="dark:text-primary">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                            <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                               Link
                             </NavigationMenuLink>
                           </div>
@@ -272,12 +274,12 @@ function SecondHeader() {
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem>
-                        <NavigationMenuTrigger className="cursor-pointer">
+                        <NavigationMenuTrigger className="cursor-pointer dark:text-primary">
                           Pages
                         </NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                            <NavigationMenuLink className="hover:bg-transparent">
+                        <NavigationMenuContent className="dark:text-primary">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                            <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                               Link
                             </NavigationMenuLink>
                           </div>
@@ -288,27 +290,27 @@ function SecondHeader() {
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem>
-                        <NavigationMenuTrigger className="cursor-pointer">
+                        <NavigationMenuTrigger className="cursor-pointer dark:text-primary">
                           User Account
                         </NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                            <NavigationMenuLink className="hover:bg-transparent">
+                        <NavigationMenuContent className="dark:text-primary">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                            <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                               Market
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                            <NavigationMenuLink className="hover:bg-transparent">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                            <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                               Gadget
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                            <NavigationMenuLink className="hover:bg-transparent">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                            <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                               Fashion
                             </NavigationMenuLink>
                           </div>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                            <NavigationMenuLink className="hover:bg-transparent">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                            <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                               Electronics
                             </NavigationMenuLink>
                           </div>
@@ -319,12 +321,12 @@ function SecondHeader() {
                   <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem>
-                        <NavigationMenuTrigger className="cursor-pointer">
+                        <NavigationMenuTrigger className="cursor-pointer dark:text-primary">
                           Vendor Account
                         </NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                            <NavigationMenuLink className="hover:bg-transparent">
+                        <NavigationMenuContent className="dark:text-primary">
+                          <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                            <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                               Link
                             </NavigationMenuLink>
                           </div>
@@ -337,7 +339,7 @@ function SecondHeader() {
               </DrawerContent>
             </Drawer>
           </div>
-          <ul className="hidden lg:flex items-center gap-6 text-[var(--primary)]">
+          <ul className="hidden lg:flex items-center gap-6 text-primary">
             <li>
               <NavigationMenu>
                 <NavigationMenuList>
@@ -345,8 +347,8 @@ function SecondHeader() {
                     <NavigationMenuTrigger className="cursor-pointer">
                       Home
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent className="">
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm">
+                    <NavigationMenuContent className="dark:text-primary">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                         <NavigationMenuLink
                           onClick={() => {
                             const element =
@@ -355,12 +357,12 @@ function SecondHeader() {
                               behavior: "smooth",
                             });
                           }}
-                          className="hover:bg-transparent"
+                          className="hover:bg-transparent dark:hover:text-secondary"
                         >
                           Advantages
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                         <NavigationMenuLink
                           onClick={() => {
                             const element =
@@ -369,12 +371,12 @@ function SecondHeader() {
                               behavior: "smooth",
                             });
                           }}
-                          className="hover:bg-transparent"
+                          className="hover:bg-transparent dark:hover:text-secondary"
                         >
                           Categories
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                         <NavigationMenuLink
                           onClick={() => {
                             const element = document.getElementById("products");
@@ -382,12 +384,12 @@ function SecondHeader() {
                               behavior: "smooth",
                             });
                           }}
-                          className="hover:bg-transparent"
+                          className="hover:bg-transparent dark:hover:text-secondary"
                         >
                           Products
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                         <NavigationMenuLink
                           onClick={() => {
                             const element = document.getElementById("announce");
@@ -395,12 +397,12 @@ function SecondHeader() {
                               behavior: "smooth",
                             });
                           }}
-                          className="hover:bg-transparent"
+                          className="hover:bg-transparent dark:hover:text-secondary"
                         >
                           Announce
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                         <NavigationMenuLink
                           onClick={() => {
                             const element =
@@ -409,12 +411,12 @@ function SecondHeader() {
                               behavior: "smooth",
                             });
                           }}
-                          className="hover:bg-transparent"
+                          className="hover:bg-transparent dark:hover:text-secondary"
                         >
                           Electronic Products
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                         <NavigationMenuLink
                           onClick={() => {
                             const element = document.getElementById("market");
@@ -422,12 +424,12 @@ function SecondHeader() {
                               behavior: "smooth",
                             });
                           }}
-                          className="hover:bg-transparent"
+                          className="hover:bg-transparent dark:hover:text-secondary"
                         >
                           Market
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                         <NavigationMenuLink
                           onClick={() => {
                             const element = document.getElementById("men");
@@ -435,12 +437,12 @@ function SecondHeader() {
                               behavior: "smooth",
                             });
                           }}
-                          className="hover:bg-transparent"
+                          className="hover:bg-transparent dark:hover:text-secondary"
                         >
                           Men Products
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                         <NavigationMenuLink
                           onClick={() => {
                             const element = document.getElementById("women");
@@ -448,12 +450,12 @@ function SecondHeader() {
                               behavior: "smooth",
                             });
                           }}
-                          className="hover:bg-transparent"
+                          className="hover:bg-transparent dark:hover:text-secondary"
                         >
                           Women Products
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
                         <NavigationMenuLink
                           onClick={() => {
                             const element = document.getElementById("brands");
@@ -461,7 +463,7 @@ function SecondHeader() {
                               behavior: "smooth",
                             });
                           }}
-                          className="hover:bg-transparent"
+                          className="hover:bg-transparent dark:hover:text-secondary"
                         >
                           Featured Brands
                         </NavigationMenuLink>
@@ -478,19 +480,19 @@ function SecondHeader() {
                     <NavigationMenuTrigger className="cursor-pointer">
                       Pages
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                        <NavigationMenuLink className="hover:bg-transparent">
+                    <NavigationMenuContent className="dark:text-primary">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                        <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                           <Link to={"/"}>Home</Link>
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                        <NavigationMenuLink className="hover:bg-transparent">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                        <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                           <Link to={"/products"}>Products</Link>
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                        <NavigationMenuLink className="hover:bg-transparent">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                        <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                           <Link to={"/cart"}>Cart</Link>
                         </NavigationMenuLink>
                       </div>
@@ -506,9 +508,9 @@ function SecondHeader() {
                     <NavigationMenuTrigger className="cursor-pointer">
                       Full Screen Menu
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                        <NavigationMenuLink className="hover:bg-transparent">
+                    <NavigationMenuContent className="dark:text-primary">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                        <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                           Link
                         </NavigationMenuLink>
                       </div>
@@ -524,9 +526,9 @@ function SecondHeader() {
                     <NavigationMenuTrigger className="cursor-pointer">
                       Pages
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                        <NavigationMenuLink className="hover:bg-transparent">
+                    <NavigationMenuContent className="dark:text-primary">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                        <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                           Link
                         </NavigationMenuLink>
                       </div>
@@ -542,24 +544,24 @@ function SecondHeader() {
                     <NavigationMenuTrigger className="cursor-pointer">
                       User Account
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                        <NavigationMenuLink className="hover:bg-transparent">
+                    <NavigationMenuContent className="dark:text-primary">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                        <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                           Market
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                        <NavigationMenuLink className="hover:bg-transparent">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                        <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                           Gadget
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                        <NavigationMenuLink className="hover:bg-transparent">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                        <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                           Fashion
                         </NavigationMenuLink>
                       </div>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                        <NavigationMenuLink className="hover:bg-transparent">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                        <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                           Electronics
                         </NavigationMenuLink>
                       </div>
@@ -575,9 +577,9 @@ function SecondHeader() {
                     <NavigationMenuTrigger className="cursor-pointer">
                       Vendor Account
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)]  duration-300 rounded-sm h-12">
-                        <NavigationMenuLink className="hover:bg-transparent">
+                    <NavigationMenuContent className="dark:text-primary">
+                      <div className="flex items-center gap-2 text-md p-2 cursor-pointer font-bold hover:bg-[var(--input)] dark:hover:bg-transparent dark:hover:text-secondary duration-300 rounded-sm">
+                        <NavigationMenuLink className="hover:bg-transparent dark:hover:text-secondary">
                           Link
                         </NavigationMenuLink>
                       </div>
@@ -721,7 +723,7 @@ function SecondHeader() {
                     ))}
                     <DrawerFooter>
                       <Link to={"/checkout"}>
-                        <Button className="w-full h-[2.7rem] cursor-pointer text-md font-bold duration-200">
+                        <Button className="w-full h-[2.7rem] cursor-pointer text-md font-bold dark:text-card-foreground duration-200">
                           Checkout Now ($ {totalAmt})
                         </Button>
                       </Link>
@@ -760,7 +762,7 @@ function SecondHeader() {
                 <DrawerTrigger>
                   <li className="flex items-center">
                     <ShoppingCart className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
-                    <span className="bg-[var(--primary)] rounded-full h-6 w-6 text-[var(--input)] font-bold">
+                    <span className="bg-primary text-card-foreground rounded-full h-6 w-6 font-bold">
                       {productData.length}
                     </span>
                   </li>
@@ -856,7 +858,7 @@ function SecondHeader() {
                   ))}
                   <DrawerFooter>
                     <Link to={"/checkout"}>
-                      <Button className="w-full h-[2.7rem] cursor-pointer text-md font-bold duration-200">
+                      <Button className="w-full h-[2.7rem] cursor-pointer text-md font-bold dark:text-card-foreground duration-200">
                         Checkout Now ($ {totalAmt})
                       </Button>
                     </Link>
