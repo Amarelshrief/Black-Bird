@@ -20,13 +20,13 @@ function Footer() {
             <div className="flex items-center gap-4 mt-3">
               <Button
                 variant="ghost"
-                className="bg-[var(--secondary)] hover:bg-[var(--muted)] hover:text-[var(--primary)] duration-150 cursor-pointer"
+                className="bg-[var(--secondary)] hover:bg-[var(--primary)]/80 text-card-foreground duration-150 cursor-pointer"
               >
                 <Link to={"/"}> Shop Now </Link>
               </Button>
               <Button
                 variant="ghost"
-                className="bg-[var(--secondary)] hover:bg-[var(--muted)] hover:text-[var(--primary)] duration-150 cursor-pointer"
+                className="bg-[var(--secondary)] hover:bg-[var(--primary)]/80 text-card-foreground duration-150 cursor-pointer"
               >
                 <Link to={"/"}> Send Message </Link>
               </Button>
@@ -38,27 +38,27 @@ function Footer() {
             </h2>
             <ul className="flex flex-col gap-2 w-3/4">
               <Link to={"/"}>
-                <li className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] text-sm duration-150">
+                <li className="cursor-pointer text-secondary hover:text-primary text-sm duration-150">
                   Careers
                 </li>
               </Link>
               <Link to={"/"}>
-                <li className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] text-sm duration-150">
+                <li className="cursor-pointer text-secondary hover:text-primary text-sm duration-150">
                   Our Stores
                 </li>
               </Link>
               <Link to={"/"}>
-                <li className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] text-sm duration-150">
+                <li className="cursor-pointer text-secondary hover:text-primary text-sm duration-150">
                   Our Cares
                 </li>
               </Link>
               <Link to={"/"}>
-                <li className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] text-sm duration-150">
+                <li className="cursor-pointer text-secondary hover:text-primary text-sm duration-150">
                   Terms & Conditions
                 </li>
               </Link>
               <Link to={"/"}>
-                <li className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] text-sm duration-150">
+                <li className="cursor-pointer text-secondary hover:text-primary text-sm duration-150">
                   Privacy Policy
                 </li>
               </Link>
@@ -70,22 +70,22 @@ function Footer() {
             </h2>
             <ul className="flex flex-col gap-2 w-3/4">
               <Link to={"/"}>
-                <li className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] text-sm duration-150">
+                <li className="cursor-pointer text-secondary hover:text-primary text-sm duration-150">
                   Help Center
                 </li>
               </Link>
               <Link to={"/"}>
-                <li className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] text-sm duration-150">
+                <li className="cursor-pointer text-secondary hover:text-primary text-sm duration-150">
                   Track Orders
                 </li>
               </Link>
               <Link to={"/"}>
-                <li className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] text-sm duration-150">
+                <li className="cursor-pointer text-secondary hover:text-primary text-sm duration-150">
                   Corporate & Bulk Purchasing
                 </li>
               </Link>
               <Link to={"/"}>
-                <li className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] text-sm duration-150">
+                <li className="cursor-pointer text-secondary hover:text-primary text-sm duration-150">
                   Returns & Refunds
                 </li>
               </Link>
@@ -105,10 +105,10 @@ function Footer() {
               Phone: +1 (212) 555-1234
             </p>
             <div className="flex items-center gap-4">
-              <X className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] duration-150" />
-              <Instagram className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] duration-150" />
-              <Facebook className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] duration-150" />
-              <Youtube className="cursor-pointer text-[var(--secondary)] hover:text-[var(--accent)] duration-150" />
+              <X className="cursor-pointer text-secondary hover:text-primary duration-150" />
+              <Instagram className="cursor-pointer text-secondary hover:text-primary duration-150" />
+              <Facebook className="cursor-pointer text-secondary hover:text-primary duration-150" />
+              <Youtube className="cursor-pointer text-secondary hover:text-primary duration-150" />
             </div>
           </div>
         </div>
