@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 function Hero() {
   const [banner, setBanner] = useState(0);
-  const banners = [bannerImg1, bannerImg4];
+  const banners = [bannerImg4, bannerImg1];
   function nextImg() {
     setBanner(banner === 1 ? 0 : (prev) => prev + 1);
   }
@@ -26,14 +26,16 @@ function Hero() {
                 <div className="relative">
                   <div className="xl:block hidden">
                     <img
-                      src={banners[1]}
+                      src={banners[0]}
                       alt="banner-image"
                       className="rounded-md w-[130rem] h-[33rem] object-cover"
                     />
                   </div>
-                  <div className="xl:absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center gap-4 p-12">
+                  <div className="xl:absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center gap-4 p-12 text-card-foreground xl:text-foreground">
                     <p className="text-2xl xl:text-3xl">LIFESTYLE COLLECTION</p>
-                    <p className="text-3xl xl:text-4xl font-bold">WOMEN</p>
+                    <p className="text-3xl xl:text-4xl font-bold">
+                      MEN AND WOMEN
+                    </p>
                     <p className="text-2xl xl:text-3xl">
                       SALE UP TO{" "}
                       <span className="text-[var(--primary)]">30% OFF</span>
@@ -43,7 +45,7 @@ function Hero() {
                       <span className="text-[var(--primary)]">$99.00</span>
                     </p>
                     <div>
-                      <Button className="h-12 w-[9rem] text-lg text-[var(--input)] bg-[var(--primary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer">
+                      <Button className="h-12 w-[9rem] text-lg text-input dark:text-card-foreground bg-primary hover:bg-[var(--primary)]/80 duration-200 cursor-pointer">
                         Shop Now
                       </Button>
                     </div>
