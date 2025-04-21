@@ -81,7 +81,7 @@ function ProductsList() {
             </p>
             <Button
               variant="outline"
-              className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+              className="w-full text-[var(--secondary)] hover:bg-input duration-200 cursor-pointer"
             >
               Add to Cart
             </Button>
@@ -102,10 +102,10 @@ function ProductsList() {
           </div>
           <div>
             <Link to={"/products"}>
-              <div className="flex items-center gap-2 hover:underline hover:translate-x-4 hover:text-[var(--muted)] duration-300">
+              <div className="flex items-center gap-2 text-secondary hover:underline hover:translate-x-4 hover:text-primary duration-300">
                 <Button
                   variant="ghost"
-                  className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--muted)]"
+                  className="-p-2 text-secondary hover:bg-transparent cursor-pointer hover:text-primary"
                 >
                   More Products
                 </Button>
