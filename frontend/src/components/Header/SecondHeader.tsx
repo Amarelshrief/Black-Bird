@@ -762,7 +762,7 @@ function SecondHeader() {
                 <DrawerTrigger>
                   <li className="flex items-center">
                     <ShoppingCart className="cursor-pointer text-[var(--primary)] hover:text-[var(--secondary)] duration-150" />
-                    <span className="bg-primary text-card-foreground rounded-full h-6 w-6 font-bold">
+                    <span className="bg-primary text-input dark:text-card-foreground rounded-full h-6 w-6 font-bold">
                       {productData.length}
                     </span>
                   </li>
