@@ -115,36 +115,34 @@ function CartItems() {
         </div>
         <div className="flex flex-col gap-4 w-full lg:w-1/4">
           <div className="flex items-center justify-between">
-            <p className="text-[var(--muted)] text-lg">Total Amount:</p>
-            <p className="text-lg font-bold text-[var(--primary)]">
-              ${totalAmt}
-            </p>
+            <p className="text-primary text-lg">Total Amount:</p>
+            <p className="text-lg font-bold text-primary">${totalAmt}</p>
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-3">
               <h4 className="text-md font-bold text-[var(--primary)]">
                 Additional Comments
               </h4>
-              <span className="bg-[var(--input)] rounded-2xl w-12 text-center text-[var(--muted)]">
+              <span className="bg-input rounded-2xl w-12 text-center text-card-foreground">
                 Note
               </span>
             </div>
             <div>
               <Textarea
                 placeholder="Additional Comments"
-                className="hover:border-primary"
+                className="hover:border-primary text-card-foreground"
               />
             </div>
             <div className="mt-4">
               <Input
                 placeholder="Voucher"
-                className="h-14 hover:border-primary"
+                className="h-14 hover:border-primary text-card-foreground"
               />
             </div>
             <div className="mt-4">
               <Button
                 variant={"outline"}
-                className="w-full text-md text-[var(--secondary)] hover:text-[var(--input)] duration-200 cursor-pointer"
+                className="w-full text-md text-secondary hover:text-primary hover:bg-input duration-200 cursor-pointer"
               >
                 Apply Voucher
               </Button>
@@ -157,26 +155,26 @@ function CartItems() {
             <div className="mt-4">
               <Input
                 placeholder="Country"
-                className="h-14 hover:border-primary"
+                className="h-14 hover:border-primary text-card-foreground"
               />
             </div>
             <div className="mt-4">
               <Input
                 placeholder="Zip Code"
-                className="h-14 hover:border-primary"
+                className="h-14 hover:border-primary text-card-foreground"
               />
             </div>
             <div className="mt-4">
               <Button
                 variant={"outline"}
-                className="w-full text-md text-[var(--secondary)] hover:text-[var(--input)] duration-200 cursor-pointer"
+                className="w-full text-md text-secondary hover:text-primary hover:bg-input duration-200 cursor-pointer"
               >
                 Apply Voucher
               </Button>
             </div>
             <Link to={`/checkout`}>
               <div className="mt-4">
-                <Button className="w-full font-bold text-md text-[var(--input)] duration-200 cursor-pointer">
+                <Button className="w-full font-bold text-md text-[var(--input)] dark:text-card-foreground duration-200 cursor-pointer">
                   Checkout Now
                 </Button>
               </div>
