@@ -45,7 +45,9 @@ function ProductCard(props: Product) {
                     <DialogTitle className="text-xl font-bold text-[var(--primary)]">
                       {props.title}
                     </DialogTitle>
-                    <p>Price: ${props.price}</p>
+                    <p className="dark:text-card-foreground">
+                      Price: ${props.price}
+                    </p>
                     <DialogDescription>{props.description}</DialogDescription>
                   </DialogHeader>
                   <div className="flex items-center gap-2 text-[var(--input)] cursor-pointer duration-200 w-[6.5rem]">
@@ -64,7 +66,7 @@ function ProductCard(props: Product) {
                           })
                         ) && toast.success("Product Added to Cart")
                       }
-                      className="flex items-center gap-2 text-[var(--input)] cursor-pointer duration-200"
+                      className="flex items-center gap-2 text-input dark:text-card-foreground cursor-pointer duration-200"
                     >
                       <ShoppingCart />
                       Buy Now
@@ -75,11 +77,9 @@ function ProductCard(props: Product) {
             </DialogContent>
           </Dialog>
           <div className="flex flex-col items-center gap-2">
-            <p className="text-xl text-[var(--secondary)] font-bold">
-              {props.title}
-            </p>
-            <p className="text-[var(--secondary)] font-bold">${props.price}</p>
-            <p className="text-[var(--muted)] text-sm text-center leading-6">
+            <p className="text-xl text-primary font-bold">{props.title}</p>
+            <p className="text-primary font-bold">${props.price}</p>
+            <p className="text-muted dark:text-secondary text-sm text-center leading-6">
               {props.description}
             </p>
             <p className="flex items-center justify-center">
@@ -93,7 +93,7 @@ function ProductCard(props: Product) {
                 size={22}
               />
             </p>
-            <p className="text-sm font-bold text-[var(--muted)]">
+            <p className="text-md font-bold text-muted dark:text-secondary">
               {props.category}
             </p>
             <Button
@@ -112,7 +112,7 @@ function ProductCard(props: Product) {
                 ) && toast.success("Product Added to Cart")
               }
               variant="outline"
-              className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 hover:text-[var(--input)] duration-200 cursor-pointer"
+              className="w-full text-secondary hover:bg-[var(--primary)]/80 hover:text-input dark:hover:text-primary duration-200 cursor-pointer"
             >
               Add to Cart
             </Button>
