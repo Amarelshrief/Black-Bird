@@ -112,7 +112,7 @@ function ProductCard(props: Product) {
                 ) && toast.success("Product Added to Cart")
               }
               variant="outline"
-              className="w-full text-secondary hover:bg-[var(--primary)]/80 hover:text-input dark:hover:text-primary duration-200 cursor-pointer"
+              className="w-full text-secondary hover:bg-input hover:text-primary duration-200 cursor-pointer"
             >
               Add to Cart
             </Button>
