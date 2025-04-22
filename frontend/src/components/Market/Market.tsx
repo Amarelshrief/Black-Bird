@@ -31,9 +31,13 @@ function Market() {
               />
             </div>
             <div className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center gap-2 p-12  text-[var(--input)]">
-              <p className="text-sm tracking-widest">Weekend Sale</p>
-              <p className="text-md lg:text-xl font-bold">Fine Smart Speaker</p>
-              <p className="text-sm lg:text-md tracking-wider">
+              <p className="text-sm dark:text-card-foreground tracking-widest">
+                Weekend Sale
+              </p>
+              <p className="text-md dark:text-card-foreground lg:text-xl font-bold">
+                Fine Smart Speaker
+              </p>
+              <p className="text-sm dark:text-card-foreground lg:text-md tracking-wider">
                 Starting at $185.00
               </p>
             </div>
