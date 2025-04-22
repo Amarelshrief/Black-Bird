@@ -125,7 +125,7 @@ function ElecProducts() {
                       </p>
                       <Button
                         variant="outline"
-                        className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                        className="w-full text-secondary hover:bg-input duration-200 cursor-pointer"
                       >
                         Add to Cart
                       </Button>
@@ -161,7 +161,7 @@ function ElecProducts() {
                       </p>
                       <Button
                         variant="outline"
-                        className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                        className="w-full text-secondary hover:bg-input duration-200 cursor-pointer"
                       >
                         Add to Cart
                       </Button>
@@ -197,7 +197,7 @@ function ElecProducts() {
                       </p>
                       <Button
                         variant="outline"
-                        className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                        className="w-full text-secondary hover:bg-input duration-200 cursor-pointer"
                       >
                         Add to Cart
                       </Button>
@@ -233,7 +233,7 @@ function ElecProducts() {
                       </p>
                       <Button
                         variant="outline"
-                        className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                        className="w-full text-secondary hover:bg-input duration-200 cursor-pointer"
                       >
                         Add to Cart
                       </Button>
@@ -269,7 +269,7 @@ function ElecProducts() {
                       </p>
                       <Button
                         variant="outline"
-                        className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                        className="w-full text-secondary hover:bg-input duration-200 cursor-pointer"
                       >
                         Add to Cart
                       </Button>
@@ -305,7 +305,7 @@ function ElecProducts() {
                       </p>
                       <Button
                         variant="outline"
-                        className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                        className="w-full text-secondary hover:bg-input duration-200 cursor-pointer"
                       >
                         Add to Cart
                       </Button>
@@ -341,7 +341,7 @@ function ElecProducts() {
                       </p>
                       <Button
                         variant="outline"
-                        className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                        className="w-full text-secondary hover:bg-input duration-200 cursor-pointer"
                       >
                         Add to Cart
                       </Button>
@@ -377,7 +377,7 @@ function ElecProducts() {
                       </p>
                       <Button
                         variant="outline"
-                        className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                        className="w-full text-secondary hover:bg-input duration-200 cursor-pointer"
                       >
                         Add to Cart
                       </Button>
@@ -413,7 +413,7 @@ function ElecProducts() {
                       </p>
                       <Button
                         variant="outline"
-                        className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                        className="w-full text-secondary hover:bg-input duration-200 cursor-pointer"
                       >
                         Add to Cart
                       </Button>
@@ -449,7 +449,7 @@ function ElecProducts() {
                       </p>
                       <Button
                         variant="outline"
-                        className="w-full text-[var(--secondary)] hover:bg-[var(--primary)]/80 duration-200 cursor-pointer"
+                        className="w-full text-secondary hover:bg-input duration-200 cursor-pointer"
                       >
                         Add to Cart
                       </Button>
