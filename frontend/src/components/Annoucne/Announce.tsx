@@ -41,13 +41,19 @@ function Announce() {
               />
             </div>
             <div className="absolute top-0 left-0 w-full h-full flex flex-col items-start justify-center gap-2 p-12">
-              <p className="text-sm tracking-widest">BEST SELLER</p>
-              <p className="text-md md:text-xl font-bold">TRENDING WOMEN</p>
-              <p className="text-sm md:text-md tracking-wider">SUNGLASSES</p>
-              <div className="flex items-center gap-2 hover:underline hover:translate-x-2 hover:text-[var(--input)] duration-300">
+              <p className="text-sm dark:text-card-foreground tracking-widest">
+                BEST SELLER
+              </p>
+              <p className="text-md dark:text-card-foreground md:text-xl font-bold">
+                TRENDING WOMEN
+              </p>
+              <p className="text-sm dark:text-card-foreground md:text-md tracking-wider">
+                SUNGLASSES
+              </p>
+              <div className="flex items-center gap-2 hover:underline hover:translate-x-2 dark:text-card-foreground hover:text-input duration-300">
                 <Button
                   variant="ghost"
-                  className="-p-2 hover:bg-transparent cursor-pointer hover:text-[var(--input)]"
+                  className="-p-2 hover:bg-transparent cursor-pointer"
                 >
                   Shop Now
                 </Button>
