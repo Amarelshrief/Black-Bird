@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer/Footer";
-import { Outlet } from "react-router-dom";
+import { ScrollRestoration, Outlet } from "react-router-dom";
 import { ThemeProvider } from "@/components/Theme/Theme";
 import Headers from "@/components/Header/Headers";
 
@@ -13,6 +13,7 @@ function RootLayout() {
         </main>
         <Footer />
       </ThemeProvider>
+      <ScrollRestoration />
     </>
   );
 }
