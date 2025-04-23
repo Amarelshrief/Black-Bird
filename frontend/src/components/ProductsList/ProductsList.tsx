@@ -1,7 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
-import { Skeleton } from "../ui/skeleton";
 import {
   Carousel,
   CarouselContent,
@@ -10,86 +9,93 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Rating } from "react-simple-star-rating";
-import { useQuery } from "@tanstack/react-query";
-import { getProducts } from "@/API/Api";
-import { Product } from "@/Pages/Products";
+import {
+  preview1,
+  preview2,
+  preview3,
+  preview4,
+  preview5,
+  preview6,
+  preview7,
+  preview8,
+  preview9,
+} from "@/assets";
 
 function ProductsList() {
-  const productQuery = useQuery({
-    queryKey: ["products"],
-    queryFn: getProducts,
-  });
-
-  let content;
-
-  if (productQuery.isPending) {
-    content = (
-      <>
-        <div className="flex items-start sm:hidden">
-          <p className="text-xl text-[var(--secondary)] font-bold">
-            Fetching Data...
-          </p>
-        </div>
-        <div className="w-full hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-          <SkeletonCard />
-          <SkeletonCard />
-          <SkeletonCard />
-        </div>
-      </>
-    );
-  }
-
-  if (productQuery.isError) {
-    content = (
-      <div className="flex items-start">
-        <p className="text-xl text-[var(--secondary)] font-bold">
-          Error Fetching Data.
-        </p>
-      </div>
-    );
-  }
-
-  if (productQuery.data) {
-    content = productQuery.data.data.map((product: Product) => (
-      <CarouselItem
-        key={product.id}
-        className="flex items-center border p-8 rounded-2xl sm:basis-1/3 lg:basis-1/5 hover:border hover:border-[var(--primary)] duration-300"
-      >
-        <div className="flex flex-col gap-2 rounded-xl h-full">
-          <div className="pb-4 flex gap-2 items-center">
-            <img
-              src={`${import.meta.env.VITE_BASE_URL}${product.image.url}`}
-              alt={product.title}
-              className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
-            />
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <p className="text-[var(--secondary)] font-bold">{product.title}</p>
-            <p className="text-[var(--secondary)] font-bold">
-              ${product.price}
-            </p>
-            <p className="flex items-center justify-center">
-              <Rating
-                initialValue={product.rate}
-                className="relative bottom-[2px] w-full"
-                iconsCount={5}
-                readonly={true}
-                SVGclassName={`inline-block`}
-                allowFraction={true}
-                size={22}
-              />
-            </p>
-            <Button
-              variant="outline"
-              className="w-full text-[var(--secondary)] hover:bg-input duration-200 cursor-pointer"
-            >
-              Add to Cart
-            </Button>
-          </div>
-        </div>
-      </CarouselItem>
-    ));
-  }
+  const PRODUCT_LIST = [
+    {
+      id: 1,
+      image: preview1,
+      title: "Black Jacket",
+      price: 180,
+      rate: 5,
+      category: "Men Fashion",
+    },
+    {
+      id: 2,
+      image: preview2,
+      title: "Hand Bag",
+      price: 180,
+      rate: 5,
+      category: "Women Fashion",
+    },
+    {
+      id: 3,
+      image: preview3,
+      title: "Brown Watch",
+      price: 180,
+      rate: 5,
+      category: "Men Fashion",
+    },
+    {
+      id: 4,
+      image: preview4,
+      title: "Bracelet",
+      price: 180,
+      rate: 5,
+      category: "Women Fashion",
+    },
+    {
+      id: 5,
+      image: preview5,
+      title: "Brown Jacket",
+      price: 180,
+      rate: 5,
+      category: "Men Fashion",
+    },
+    {
+      id: 6,
+      image: preview6,
+      title: "Headphone",
+      price: 520,
+      rate: 5,
+      category: "Electronics",
+    },
+    {
+      id: 7,
+      image: preview7,
+      title: "Xbox Controller",
+      price: 980,
+      rate: 5,
+      category: "Electronics",
+    },
+    {
+      id: 7,
+      image: preview8,
+      title: "Iphone 12 Pro",
+      price: 1800,
+      rate: 5,
+      category: "Electronics",
+    },
+    {
+      id: 7,
+      image: preview9,
+      title: "Keyboard",
+      price: 180,
+      rate: 5,
+      category: "Electronics",
+    },
+  ];
 
   return (
     <section className="mt-8" id="products">
@@ -116,7 +122,46 @@ function ProductsList() {
         </div>
         <div className="mt-4 max-w-full p-8 sm:p-16 lg:p-0">
           <Carousel className="">
-            <CarouselContent className="ml-0 flex">{content}</CarouselContent>
+            <CarouselContent className="ml-0 flex">
+              {PRODUCT_LIST.map((product) => (
+                <CarouselItem
+                  key={product.id}
+                  className="flex items-center border p-8 rounded-2xl sm:basis-1/3 lg:basis-1/5 hover:border hover:border-[var(--primary)] duration-300"
+                >
+                  <div className="flex flex-col gap-2 rounded-xl h-full">
+                    <div className="pb-4 flex gap-2 items-center">
+                      <img
+                        src={product.image}
+                        alt={product.title}
+                        className="hover:scale-110 duration-300 cursor-pointer rounded-2xl"
+                      />
+                    </div>
+                    <div className="flex flex-col items-center gap-2">
+                      <p className="text-[var(--secondary)] font-bold">
+                        {product.title}
+                      </p>
+                      <p className="text-[var(--secondary)] font-bold">
+                        ${product.price}
+                      </p>
+                      <p className="flex items-center justify-center">
+                        <Rating
+                          initialValue={product.rate}
+                          className="relative bottom-[2px] w-full"
+                          iconsCount={5}
+                          readonly={true}
+                          SVGclassName={`inline-block`}
+                          allowFraction={true}
+                          size={22}
+                        />
+                      </p>
+                      <p className="text-md font-bold text-muted dark:text-secondary">
+                        {product.category}
+                      </p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
             <CarouselPrevious variant="default" className="cursor-pointer" />
             <CarouselNext variant="default" className="cursor-pointer" />
           </Carousel>
@@ -127,15 +172,3 @@ function ProductsList() {
 }
 
 export default ProductsList;
-
-function SkeletonCard() {
-  return (
-    <div className="flex flex-col space-y-3">
-      <Skeleton className="md:h-[20rem] w-full rounded-xl" />
-      <div className="space-y-2">
-        <Skeleton className="" />
-        <Skeleton className="" />
-      </div>
-    </div>
-  );
-}
