@@ -150,7 +150,7 @@ footer {
 }
 
 .main-container {
-  @apply mx-4 lg:mx-auto lg:h-full lg:w-11/12 lg:pb-0 xl:w-11/12;
+  @apply mx-4 lg:mx-auto lg:h-full lg:w-10/11 lg:pb-0 xl:w-11/12;
 }
 
 .bg {
