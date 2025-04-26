@@ -5,7 +5,9 @@ function FeaturedBrands() {
     <section className="my-8" id="brands">
       <div className="main-container">
         <div>
-          <h2 className="text-2xl font-bold mb-4">Featured Brands</h2>
+          <h2 className="text-2xl text-primary font-bold mb-4">
+            Featured Brands
+          </h2>
           <div className="flex items-center justify-center lg:justify-between gap-8 lg:gap-4 flex-wrap">
             <div>
               <div>
