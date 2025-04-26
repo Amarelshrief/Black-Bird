@@ -83,7 +83,7 @@ function WomenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary "
               >
-                Wireless Speaker
+                Hand Bag
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -91,7 +91,7 @@ function WomenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                Tablet
+                Dress
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -99,7 +99,7 @@ function WomenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                Smartphone
+                Skirt
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -107,7 +107,7 @@ function WomenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                Laptop
+                Blouse
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -115,7 +115,7 @@ function WomenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                iMac
+                Bracelet
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -131,7 +131,7 @@ function WomenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                Drone
+                Sunglasses
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -139,7 +139,7 @@ function WomenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                Apple
+                Colored Dresses
               </Button>
             </div>
             <Link to="/products">
