@@ -83,7 +83,7 @@ function MenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary "
               >
-                Wireless Speaker
+                Jacket
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -91,7 +91,7 @@ function MenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                Tablet
+                Watch
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -99,7 +99,7 @@ function MenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                Smartphone
+                T-shirt
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -107,7 +107,7 @@ function MenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                Laptop
+                Hand Bag
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -115,7 +115,7 @@ function MenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                iMac
+                Shoes
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -123,7 +123,7 @@ function MenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                Game Controller
+                Blover
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -131,7 +131,7 @@ function MenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                Drone
+                Shirt
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
@@ -139,7 +139,7 @@ function MenFashion() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                Apple
+                Polo
               </Button>
             </div>
             <Link to="/products">
