@@ -6,7 +6,7 @@ import Headers from "@/components/Header/Headers";
 function RootLayout() {
   return (
     <>
-      <ThemeProvider defaultTheme="dark" storageKey="black-bird-theme">
+      <ThemeProvider defaultTheme="system" storageKey="black-bird-theme">
         <Headers />
         <main>
           <Outlet />
