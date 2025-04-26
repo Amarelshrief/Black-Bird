@@ -116,7 +116,7 @@ function ElecProducts() {
                 variant="ghost"
                 className="text-md -p-2 hover:bg-transparent cursor-pointer hover:text-primary"
               >
-                iMac
+                Iphone
               </Button>
             </div>
             <div className="flex items-center gap-2 hover:translate-x-2 text-secondary hover:text-primary duration-300">
